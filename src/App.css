@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.vic1 {
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+}
+.vic2 {
+  color: rgb(248, 152, 8);
+  font-family: "Times New Roman", Times, serif;
 }
