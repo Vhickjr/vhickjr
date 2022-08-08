@@ -2,6 +2,7 @@
   text-align: center;
   background-color: black;
   align-content: center;
+  height: 1200px;
 }
 
 .App-logo {
@@ -48,12 +49,4 @@
   color: rgb(248, 152, 8);
   font-family: "Brush Script MT", cursive;
   font-size: 50px;
-}
-
-.containerr {
-  display: flex;
-  width: 300px;
-  height: 300px;
-  align-items: center;
-  padding-left: 100px;
 }

@@ -1,0 +1,22 @@
+.vic3 {
+  color: rgb(248, 8, 8);
+  font-family: "Brush Script MT", cursive;
+  font-size: 50px;
+}
+
+.vic4 {
+  color: white;
+  font-family: "Brush Script MT", cursive;
+  font-size: 30px;
+}
+.containerr {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  box-sizing: border-box;
+  border: 100px, 100px;
+  background-color: black;
+  margin-left: 280px;
+  margin-top: 50px;
+}

@@ -17,7 +17,7 @@ function App() {
             <p className="vic1"> check back soon :)</p>
           </p>
         </header>
-        <div className="containerr">
+        <div>
           <Mailer></Mailer>
         </div>
       </div>
