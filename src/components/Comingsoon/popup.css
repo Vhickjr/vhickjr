@@ -5,11 +5,11 @@
   background-color: rgba(39, 145, 216, 0.71);
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: center;
   top: 0;
 }
 .popup {
-  height: 400px;
+  height: 500px;
   width: 50%;
   background-color: white;
   position: absolute;
