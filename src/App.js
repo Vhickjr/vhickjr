@@ -8,7 +8,7 @@ import Myportfolio from "./pages/Myportfolio/Myportfolio";
 import Services from "./pages/Services/Services";
 import Skills from "./pages/Skills/Skills";
 import Testimonial from "./pages/Testimonial/Testimonial";
-
+import Mailer from "./components/Comingsoon/mailer";
 function App() {
   return (
     <div>
@@ -16,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Comingsoon />}></Route>
           <Route path="/Home" element={<Home></Home>}></Route>
+          <Route path="/Mailer" element={<Mailer></Mailer>}></Route>
           <Route path="/Aboutme" element={<Aboutme></Aboutme>}></Route>
           <Route path="/Contactme" element={<Contactme></Contactme>}></Route>
           <Route path="/Hireme" element={<Hireme></Hireme>}></Route>
