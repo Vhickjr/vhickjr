@@ -1,6 +1,6 @@
 import pizza1 from "./pizza1.png";
 import "./App.css";
-import Mailer from "./components/mailer";
+import Mailer from "./components/Comingsoon/mailer";
 
 function Comingsoon() {
   return (
@@ -19,10 +19,9 @@ function Comingsoon() {
             <p className="vic1"> check back soon :)</p>
           </p>
         </header>
-        <div>
-          <Mailer></Mailer>
-        </div>
+        <Mailer></Mailer>
       </div>
+      <div></div>
     </div>
   );
 }
