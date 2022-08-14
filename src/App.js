@@ -9,6 +9,7 @@ import Services from "./pages/Services/Services";
 import Skills from "./pages/Skills/Skills";
 import Testimonial from "./pages/Testimonial/Testimonial";
 import Mailer from "./components/Comingsoon/mailer";
+
 function App() {
   return (
     <div>
@@ -21,7 +22,7 @@ function App() {
           <Route path="/Contactme" element={<Contactme></Contactme>}></Route>
           <Route path="/Hireme" element={<Hireme></Hireme>}></Route>
           <Route
-            path="/Myportfolio "
+            path="/Myportfolio"
             element={<Myportfolio></Myportfolio>}
           ></Route>
           <Route path="/Services" element={<Services></Services>}></Route>

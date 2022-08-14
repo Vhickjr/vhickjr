@@ -57,11 +57,11 @@ const Mailer = () => {
             <div className="main">
               <div className="popup">
                 <div className="popup-header">
-                  <h1>popup</h1>
+                  <h1 className="vic2">popup</h1>
                   <h1 onClick={closePopup}>X</h1>
                 </div>
-                <div>
-                  <p>This is simple popup in React js</p>
+                <div className="vic2">
+                  <p> Your message has been sent!</p>
                 </div>
               </div>
             </div>
