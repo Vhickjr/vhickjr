@@ -9,7 +9,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavScrollExample() {
   return (
-    <Navbar className="customcolor" variant="dark" expand="lg">
+    <Navbar
+      className="customcolor"
+      variant="dark"
+      expand="lg"
+      style={{ height: "100%" }}
+    >
       <Container fluid>
         <Navbar.Brand href="#" className="vicc4">
           Victor Mathias

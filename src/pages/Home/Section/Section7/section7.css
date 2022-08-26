@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+.contact-me {
+  font-family: "Nunito" sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.sec7 {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  left: 0px;
+  background-color: silver;
+  justify-content: center;
+}
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.contact-list {
+  color: white;
+  list-style: none;
+  margin-top: 50px;
+}
+.contact-list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact-details {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -1px;
+}
+.icons {
+  display: flex;
+  color: white;
+}
+.icon {
+  font-size: 26px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.contact-form {
+  position: relative;
+  width: 300px;
+  height: 460px;
+}
+.contact-form form {
+  width: 275px;
+  height: 400px;
+}
+.contact-input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+  background-color: white;
+}
+.contact-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.contact-textarea {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: auto;
+  border-radius: 5px;
+}
+.contact-textarea textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+}
+.contact-textarea button {
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 80px;
+  padding: 10px 0;
+  align-self: center;
+  border: none;
+  background-color: inherit;
+}
+.contact-textarea button:hover {
+  background-color: black;
+  color: white;
+}
+#goto {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 26px;
+  font-weight: 500;
+}

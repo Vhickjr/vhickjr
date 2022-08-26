@@ -1,0 +1,47 @@
+.sec6 {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  left: 0px;
+  background-color: gold;
+  justify-content: center;
+}
+.testimonials {
+  font-family: "Nunito", sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  padding: 2px 0;
+}
+.title {
+  letter-spacing: 0;
+  line-height: 64px;
+  font-size: 32px;
+  font-weight: 800;
+  font-style: normal;
+  color: #070707;
+}
+
+.quote--marks {
+  font-size: 42px;
+  height: 42px;
+}
+
+.star--ratings {
+  height: 33px;
+  margin-top: 15px;
+  font-size: 35px;
+  height: 33px;
+}
+
+.client--content {
+  gap: 10px;
+  padding: 10px 0;
+}
+.client--quote,
+.client--name {
+  color: #070707;
+  font-size: 32px;
+  line-height: 44px;
+}
