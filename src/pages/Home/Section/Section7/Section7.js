@@ -23,22 +23,30 @@ const Section7 = () => {
         <ul className="contact-list">
           <li className="contact-list-item">
             <FaPhoneAlt className="icon" />
-            <p className="contact-details">+234 802 726 3362</p>
+            <p className="contact-details">+234 813 962 4288</p>
           </li>
           <li className="contact-list-item">
             <FaEnvelope className="icon" />
-            <p className="contact-details">hephzibahtoye@gmail.com</p>
+            <p className="contact-details">victormathias001@gmail.com</p>
           </li>
           <li className="contact-list-item">
             <FaMapMarkerAlt className="icon" />
-            <p className="contact-details">Ibadan, NIGERIA</p>
+            <p className="contact-details">Lagos, NIGERIA</p>
           </li>
 
           <div className="icons">
-            <FaLinkedin className="icon" />
-            <FaInstagram className="icon" />
-            <FaTwitterSquare className="icon" />
-            <FaBehanceSquare className="icon" />
+            <a href="https://www.linkedin.com/in/victor-mathias-585b71205">
+              <FaLinkedin className="icon" />
+            </a>
+            <a href="https://www.instagram.com/vhickjr/">
+              <FaInstagram className="icon" />
+            </a>
+            <a href="https://www.twitter.com/__therealvictor">
+              <FaTwitterSquare className="icon" />
+            </a>
+            <a>
+              <FaBehanceSquare className="icon" />
+            </a>
           </div>
         </ul>
         <div className="contact-form">

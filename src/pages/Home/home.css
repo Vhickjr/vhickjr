@@ -49,6 +49,7 @@ main {
 .section4 {
   background: white;
   grid-area: section4;
+  color: black;
 }
 .section5 {
   background: white;

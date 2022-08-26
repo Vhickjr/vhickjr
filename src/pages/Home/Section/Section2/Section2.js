@@ -1,7 +1,7 @@
 import React from "react";
 import "./section2.css";
 import { Button, Container, Row } from "react-bootstrap";
-import Portrait from "./image.png";
+import Portrait from "./vhickjr.png";
 export default function Section2() {
   return (
     <div className="sec2">
