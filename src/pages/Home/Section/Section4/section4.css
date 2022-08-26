@@ -1,3 +1,31 @@
+.customcontain0 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+}
+h3 {
+  color: black;
+  text-align: center;
+}
+.customcontain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding-top: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.customcontain1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 :root {
   --primary-color: rgba(7, 7, 7, 1);
   --style: rgba(217, 217, 217, 1);
@@ -16,6 +44,7 @@
   font-family: "Nunito", sans-serif;
   color: black;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -47,12 +76,9 @@
   align-items: center;
   background-color: var(--style);
   border-radius: 20px;
-  min-height: 262px;
-  padding: 38px 16px;
 }
 
 .component--icon {
-  margin-left: 1px;
   font-size: 42px;
 }
 
@@ -67,18 +93,13 @@
 }
 
 .component--text {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--primary-color);
   font-weight: 400;
   font-style: normal;
   margin-top: 5px;
+  padding-bottom: 50px;
   letter-spacing: 0;
   line-height: 27px;
   width: 374px;
-}
-
-@media (max-width: 391px) {
-  .component--cards {
-    height: 230px;
-  }
 }

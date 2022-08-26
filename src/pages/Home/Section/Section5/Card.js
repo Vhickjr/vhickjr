@@ -10,7 +10,7 @@ const Card = ({ image, alt, heading, appName, value }) => {
       <div className="w-50 ps-1">
         <p className="fw-bold fs-6">{heading}</p>
         <p className="fw-bold d-md-block d-lg-none">{appName}</p>
-        <button className="btn btn-dark text-white">{value}</button>
+        <button className="btnn btn-dark text-white">{value}</button>
       </div>
     </div>
   );
