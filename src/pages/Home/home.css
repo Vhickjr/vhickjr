@@ -11,7 +11,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-areas:
     "nav nav nav nav"
     "main main main main"
@@ -22,7 +22,7 @@ body {
     "section6 section6 section6 section6"
     "section7 section7 section7 section7"
     "footer footer footer footer";
-  grid-gap: 0rem;
+
   font-weight: 800;
   text-transform: uppercase;
   font-size: 12px;
@@ -105,17 +105,81 @@ a {
 
 @media only screen and (max-width: 550px) {
   .customcontainer {
+    display: grid;
+    height: 100vh;
+    width: 450px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
-      "nav"
-      "main"
-      "section2"
-      "section3"
-      "section4"
-      "section5"
-      "section6"
-      "section7"
-      "footer";
+      "nav nav nav nav"
+      "main main main main"
+      "section2 section2 section2 section2"
+      "section3 section3 section3 section3"
+      "section4 section4 section4 section4"
+      "section5 section5 section5 section5"
+      "section6 section6 section6 section6"
+      "section7 section7 section7 section7"
+      "footer footer footer footer";
+
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+
+  .customcontainer {
+    display: grid;
+    height: 100vh;
+    width: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main"
+      "section2 section2 section2 section2"
+      "section3 section3 section3 section3"
+      "section4 section4 section4 section4"
+      "section5 section5 section5 section5"
+      "section6 section6 section6 section6"
+      "section7 section7 section7 section7"
+      "footer footer footer footer";
+
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+
+  .customcontainer {
+    display: grid;
+    height: 100vh;
+    width: 350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main"
+      "section2 section2 section2 section2"
+      "section3 section3 section3 section3"
+      "section4 section4 section4 section4"
+      "section5 section5 section5 section5"
+      "section6 section6 section6 section6"
+      "section7 section7 section7 section7"
+      "footer footer footer footer";
+
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
   }
 }
