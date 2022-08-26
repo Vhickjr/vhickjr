@@ -1,0 +1,85 @@
+:root {
+  --primary-color: rgba(7, 7, 7, 1);
+  --style: rgba(217, 217, 217, 1);
+}
+.sec4 {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  left: 0px;
+  background-color: cyan;
+  justify-content: center;
+}
+.services-section {
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+
+.main--title {
+  letter-spacing: 0;
+  line-height: 64px;
+  min-width: 127px;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 1;
+}
+
+.component--row {
+  align-items: flex-end;
+  display: flex;
+  height: 338px;
+  margin-top: 25px;
+  min-width: 1300px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.component--cards {
+  align-items: center;
+  background-color: var(--style);
+  border-radius: 20px;
+  min-height: 262px;
+  padding: 38px 16px;
+}
+
+.component--icon {
+  margin-left: 1px;
+  font-size: 42px;
+}
+
+.component--title {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--primary-color);
+  letter-spacing: 0;
+  margin-top: 1px;
+  line-height: 33px;
+}
+
+.component--text {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5px;
+  letter-spacing: 0;
+  line-height: 27px;
+  width: 374px;
+}
+
+@media (max-width: 391px) {
+  .component--cards {
+    height: 230px;
+  }
+}

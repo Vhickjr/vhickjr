@@ -13,17 +13,34 @@ import Section7 from "../Home/Section/Section7/Section7";
 
 export default function Home() {
   return (
-    <div style={{ height: "1300px" }}>
-      <Header></Header>
-      <Navbar></Navbar>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Footer></Footer>
+    <div class="customcontainer">
+      <nav>
+        <Navbar></Navbar>
+      </nav>
+      <main>
+        <Section1></Section1>
+      </main>
+      <div className="section2">
+        <Section2></Section2>
+      </div>
+      <div className="section3">
+        <Section3></Section3>
+      </div>
+      <div className="section4">
+        <Section4></Section4>
+      </div>
+      <div className="section5">
+        <Section5></Section5>
+      </div>
+      <div className="section6">
+        <Section6></Section6>
+      </div>
+      <div className="section7">
+        <Section7></Section7>
+      </div>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }
