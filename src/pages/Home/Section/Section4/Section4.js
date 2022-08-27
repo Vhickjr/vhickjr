@@ -22,18 +22,16 @@ export default function Section4() {
           </p>
         </div>
         <div className="component--cards">
-          <div className="card-body over-flow auto">
-            <div className="component--icon">
-              <FaGlobe />
-            </div>
-            <div className="component--design">
-              <h3 className="component--title"> Web Designing</h3>
-              <p className="component--text">
-                Our team implements beautiful, stunning and unique designs using
-                React JS. Our websites are user friendly and provide an awesome
-                experience for all users.{" "}
-              </p>
-            </div>
+          <div className="component--icon">
+            <FaGlobe />
+          </div>
+          <div>
+            <h3 className="component--title"> Web Designing</h3>
+            <p className="component--text">
+              Our team implements beautiful, stunning and unique designs using
+              React JS. Our websites are user friendly and provide an awesome
+              experience for all users.{" "}
+            </p>
           </div>
         </div>
         <div className="component--cards">
