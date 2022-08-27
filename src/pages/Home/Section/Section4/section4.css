@@ -76,6 +76,7 @@ h3 {
   align-items: center;
   background-color: var(--style);
   border-radius: 20px;
+  width: 320px;
 }
 
 .component--icon {
@@ -99,7 +100,13 @@ h3 {
   font-style: normal;
   margin-top: 5px;
   padding-bottom: 50px;
+  padding-left: 20px;
   letter-spacing: 0;
   line-height: 27px;
-  width: 374px;
+  width: 275px;
+}
+
+@media only screen and (max-width: 550px) {
+  .customcontainer {
+  }
 }
