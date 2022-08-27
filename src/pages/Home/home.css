@@ -110,7 +110,6 @@ a {
   .customcontainer {
     display: grid;
     height: 100vh;
-    width: 450px;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
@@ -138,7 +137,6 @@ a {
   .customcontainer {
     display: grid;
     height: 100vh;
-    width: 500px;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
@@ -165,7 +163,7 @@ a {
   .customcontainer {
     display: grid;
     height: 100vh;
-    width: 400px;
+
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
@@ -190,7 +188,6 @@ a {
   .customcontainer {
     display: grid;
     height: 100vh;
-    width: 350px;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
