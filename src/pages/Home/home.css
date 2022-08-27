@@ -106,8 +106,11 @@ a {
   margin: 1rem;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+
   .customcontainer {
+    overflow-x: hidden;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
@@ -131,10 +134,9 @@ a {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /*Big smartphones [426px -> 600px]*/
-
+@media only screen and (max-width: 550px) {
   .customcontainer {
+    overflow-x: hidden;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
@@ -161,6 +163,7 @@ a {
   /*Small smartphones [325px -> 425px]*/
 
   .customcontainer {
+    overflow-x: hidden;
     display: grid;
     height: 100vh;
 
@@ -186,6 +189,7 @@ a {
 }
 @media only screen and (max-width: 375px) {
   .customcontainer {
+    overflow-x: hidden;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
