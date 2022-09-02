@@ -1,4 +1,5 @@
 .aboutme {
+  overflow-x: hidden;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -36,7 +37,14 @@
 }
 
 #arrow {
-  color: white;
+  color: #f4f4f4;
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+#arrow1 {
+  color: black;
   margin-top: 50px;
   font-size: 26px;
   font-weight: 500;
