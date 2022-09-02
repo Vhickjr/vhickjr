@@ -97,7 +97,7 @@ footer {
   grid-area: footer;
 }
 
-a {
+.aa {
   text-align: center;
   display: block;
   font-family: inherit;

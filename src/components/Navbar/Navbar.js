@@ -7,7 +7,7 @@ import "./navbar.css";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function NavScrollExample() {
+function Navbarr() {
   return (
     <Navbar
       className="customcolor"
@@ -43,4 +43,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default Navbarr;
