@@ -2,7 +2,7 @@
   text-align: center;
   background-color: black;
   align-content: center;
-  height: 1200px;
+  position: relative;
 }
 
 .App-logo {

@@ -19,7 +19,7 @@ const Footer = () => {
     <footerSection>
       <Center>
         <textContent>
-          <FaRegCopyright /> Copyright 2022. vhickjr.com
+          <FaRegCopyright /> Copyright 2022. mathiasvictor.com
         </textContent>
       </Center>
     </footerSection>

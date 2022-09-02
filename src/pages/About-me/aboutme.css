@@ -1,0 +1,43 @@
+.aboutme {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 2fr 1fr;
+  grid-template-areas:
+    "main"
+    "item1"
+    "item2";
+}
+
+.main {
+  text-align: center;
+  grid-area: main;
+  background: black;
+  color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.item1 {
+  grid-area: item1;
+  background: #f4f4f4;
+  color: black;
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+}
+.item2 {
+  grid-area: item2;
+  background: black;
+  color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#arrow {
+  color: white;
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 500;
+}

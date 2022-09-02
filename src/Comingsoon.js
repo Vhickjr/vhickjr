@@ -19,9 +19,11 @@ function Comingsoon() {
             <p className="vic1"> check back soon :)</p>
           </p>
         </header>
+      </div>
+      <div>
+        {" "}
         <Mailer></Mailer>
       </div>
-      <div></div>
     </div>
   );
 }
