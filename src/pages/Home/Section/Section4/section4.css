@@ -20,8 +20,8 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 5em;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
 }

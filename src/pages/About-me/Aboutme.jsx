@@ -1,16 +1,16 @@
 import React from "react";
 import "./aboutme.css";
 import Myportrait from "./vhickjr.png";
-import { FaArrowCircleLeft, FiArrowRight } from "react-icons/fa";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 export default function Aboutme() {
   return (
     <div className="aboutme">
       {" "}
       <div className="main">
-        <a href="/Home">
-          <FaArrowCircleLeft id="arrow" />
-        </a>
-        <div style={{ width: "520px" }}>
+        <div style={{ width: "425px" }}>
+          <a href="/Home">
+            <FaArrowCircleLeft id="arrow" />
+          </a>
           <h2
             style={{
               fontWeight: "800",
@@ -38,7 +38,7 @@ export default function Aboutme() {
             alt="My portrait"
             style={{
               height: "520px",
-              width: "520px",
+              width: "425px",
               borderRadius: "100%",
               padding: "2em",
             }}
@@ -71,56 +71,65 @@ export default function Aboutme() {
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
               backgroundColor: "white",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            box1
+            <div style={{ marginTop: "50px" }}>Empathize</div>
           </div>
+          <FaArrowCircleRight id="arrow1" />
           <div
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
               backgroundColor: "white",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <p>box2</p>
+            <div style={{ marginTop: "50px" }}>Define</div>
           </div>
+          <FaArrowCircleRight id="arrow1" />
           <div
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
               backgroundColor: "white",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            box3
+            <div style={{ marginTop: "50px" }}>Ideate</div>
           </div>
+          <FaArrowCircleRight id="arrow1" />
           <div
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
               backgroundColor: "white",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            box4
+            <div style={{ marginTop: "50px" }}>Prototype</div>
           </div>
+          <FaArrowCircleRight id="arrow1" />
           <div
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
               backgroundColor: "white",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            box5
+            <div style={{ marginTop: "50px" }}>Test</div>
           </div>
         </div>
       </div>
@@ -153,37 +162,40 @@ export default function Aboutme() {
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
-              backgroundColor: "white",
+              backgroundColor: "#f4f4f4",
               color: "black",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            box1
+            <div style={{ marginTop: "50px" }}>10 featured projects</div>
           </div>
           <div
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
-              backgroundColor: "white",
+              backgroundColor: "#f4f4f4",
               color: "black",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <p>box2</p>
+            <div style={{ marginTop: "50px" }}>EEE Student at Unilag</div>
           </div>
           <div
             style={{
               width: "120px",
               height: "120px",
-              border: "2px solid black",
+              border: "2px solid #f4f4f4",
               borderRadius: "15px",
-              backgroundColor: "white",
+              backgroundColor: "#f4f4f4",
               color: "black",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            box3
+            <div style={{ marginTop: "50px" }}>Forex trader</div>
           </div>
         </div>
       </div>
