@@ -1,15 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .sec3 {
   background-color: #000;
-  height: 400px;
   padding-top: 50px;
   padding-left: 5em;
   padding-right: 5em;
-
   justify-content: center;
-}
-
-h3 {
-  color: white;
-  text-align: start;
 }
