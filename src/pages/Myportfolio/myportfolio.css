@@ -1,0 +1,155 @@
+.myportfolio {
+  background: #f4f4f4;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.port1 {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.port2 {
+  height: 355px;
+  position: relative;
+  width: 40%;
+  display: flex;
+  margin-top: 40px;
+}
+.port3 {
+  height: 276px;
+  width: 40%;
+  padding-left: 1%;
+  margin: 185px 1% 1% -40px;
+  z-index: 3;
+  opacity: 1;
+  background: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.img-container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Shippori Antique, sans-serif;
+  max-width: 100%;
+}
+.img-container1 {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  filter: none;
+  background-size: cover;
+  background-image: none;
+  background-position: 0% 0%;
+}
+.img-container2 {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+
+  .port2 {
+    height: 130px;
+    position: relative;
+    width: 30%;
+    display: flex;
+    margin-top: 180px;
+  }
+  .port3 {
+    height: 276px;
+    width: 40%;
+    padding-left: 1%;
+    margin: 130px 1% 1% -40px;
+    z-index: 3;
+    opacity: 1;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .port2 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .port3 {
+    height: 200px;
+    width: 100%;
+    padding-left: 1%;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    z-index: 3;
+    opacity: 1;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .port2 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .port3 {
+    height: 200px;
+    width: 100%;
+    padding-left: 1%;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    z-index: 3;
+    opacity: 1;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+#arrow2 {
+  color: black;
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* 1. for the item to maintain its original stacking context, use position relative on the main container,
+2. instead of using relative on the component, you could also use transform: translate(x,y)
+*/

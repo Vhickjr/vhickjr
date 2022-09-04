@@ -1,13 +1,20 @@
 import React from "react";
 import "./aboutme.css";
-import Myportrait from "./vhickjr.png";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import Myportrait from "./vhickjr2.png";
+import {
+  FaArrowCircleLeft,
+  FaArrowCircleRight,
+  FaSchool,
+  FaChartLine,
+  FaBusinessTime,
+  FaDesktop,
+} from "react-icons/fa";
 export default function Aboutme() {
   return (
     <div className="aboutme">
       {" "}
       <div className="main">
-        <div style={{ width: "425px" }}>
+        <div style={{ width: "50%" }}>
           <a href="/Home">
             <FaArrowCircleLeft id="arrow" />
           </a>
@@ -18,7 +25,7 @@ export default function Aboutme() {
               lineHeight: "64px",
               fontFamily: "Nunito",
               fontStyle: "normal",
-              marginTop: "100px",
+              marginTop: "10px",
             }}
           >
             About me
@@ -37,8 +44,8 @@ export default function Aboutme() {
             src={Myportrait}
             alt="My portrait"
             style={{
-              height: "520px",
-              width: "425px",
+              height: "425px",
+              width: "110%",
               borderRadius: "100%",
               padding: "2em",
             }}
@@ -169,7 +176,10 @@ export default function Aboutme() {
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <div style={{ marginTop: "50px" }}>10 featured projects</div>
+            <FaDesktop
+              style={{ marginTop: "15px", fontSize: "25px" }}
+            ></FaDesktop>
+            <div style={{ marginTop: "20px" }}>10 featured projects</div>
           </div>
           <div
             style={{
@@ -182,7 +192,10 @@ export default function Aboutme() {
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <div style={{ marginTop: "50px" }}>EEE Student at Unilag</div>
+            <FaSchool
+              style={{ marginTop: "15px", fontSize: "25px" }}
+            ></FaSchool>
+            <div style={{ marginTop: "20px" }}>EEE Student at Unilag</div>
           </div>
           <div
             style={{
@@ -195,7 +208,26 @@ export default function Aboutme() {
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <div style={{ marginTop: "50px" }}>Forex trader</div>
+            <FaChartLine
+              style={{ marginTop: "15px", fontSize: "25px" }}
+            ></FaChartLine>
+            <div style={{ marginTop: "20px" }}>Forex trader</div>
+          </div>
+          <div
+            style={{
+              width: "120px",
+              height: "120px",
+              border: "2px solid #f4f4f4",
+              borderRadius: "15px",
+              backgroundColor: "#f4f4f4",
+              color: "black",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            }}
+          >
+            <FaBusinessTime
+              style={{ marginTop: "15px", fontSize: "25px" }}
+            ></FaBusinessTime>
+            <div style={{ marginTop: "20px" }}>Entrepreneur</div>
           </div>
         </div>
       </div>
