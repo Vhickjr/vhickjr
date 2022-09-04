@@ -45,7 +45,7 @@ const Section5 = () => {
                 alt={details.alt}
                 heading={details.heading}
                 appName={details.appName}
-                value="VIEW CASE STUDY"
+                value="VIEW PROJECT"
               />
             </div>
           ))}

@@ -1,13 +1,13 @@
 import React from "react";
 import {
   FaPhoneAlt,
-  FaBehanceSquare,
   FaInstagram,
   FaLinkedin,
   FaTwitterSquare,
   FaEnvelope,
   FaMapMarkerAlt,
   FaArrowAltCircleUp,
+  FaGithubSquare,
 } from "react-icons/fa";
 import "./section7.css";
 
@@ -15,7 +15,9 @@ const Section7 = () => {
   const goToTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
   };
+
   return (
     <div className="contact-me">
       <h2 className="title">contact me</h2>
@@ -44,8 +46,8 @@ const Section7 = () => {
             <a href="https://www.twitter.com/__therealvictor">
               <FaTwitterSquare className="icon" />
             </a>
-            <a>
-              <FaBehanceSquare className="icon" />
+            <a href="https://github.com/Vhickjr">
+              <FaGithubSquare className="icon" />
             </a>
           </div>
         </ul>
@@ -73,3 +75,5 @@ const Section7 = () => {
 };
 
 export default Section7;
+
+/*Create a  function called totop that scrolls to the top of a page*/

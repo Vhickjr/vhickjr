@@ -27,7 +27,7 @@ export default function Home() {
         <Section3></Section3>
       </div>
       <div className="section4">
-        <h3>Services</h3>
+        <h3 style={{ color: "black", paddingTop: "80px" }}>Services</h3>
         <Section4></Section4>
       </div>
       <div className="section5">

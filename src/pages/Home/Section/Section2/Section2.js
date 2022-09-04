@@ -36,7 +36,12 @@ export default function Section2() {
             }}
           >
             <div>
-              <h2 className="header">About Me</h2>
+              <a
+                href="/Aboutme"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <h2 className="header">About Me</h2>
+              </a>
 
               <p className="content">
                 I am a creative product designer with 1 year experience, I offer
