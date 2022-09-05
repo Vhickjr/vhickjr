@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import Section1 from "../Home/Section/Section1/Section1";
 import Section2 from "../Home/Section/Section2/Section2";
