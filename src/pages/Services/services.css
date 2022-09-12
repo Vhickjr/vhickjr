@@ -1,0 +1,107 @@
+.services {
+  background: grey;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services-content-wrapper {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5%;
+  flex-wrap: wrap;
+}
+.myservices {
+  height: 25em;
+  width: 28%;
+  margin: 1.5%;
+  background-color: #191919;
+  display: inline-block;
+  box-shadow: 0 0 25px rgb(0 0 0 / 5%);
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: opacity 1.4s ease;
+}
+.myservices:hover {
+  background-color: #046d33;
+}
+
+#myservices {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding-bottom: 10px !important;
+  background-color: #046d33;
+  color: white !important;
+  height: 92px;
+  width: 92px;
+  border-radius: 30px;
+}
+.techstack {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2em;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.frontend {
+  width: 40%;
+  background: #046d33;
+  border: 2px solid #046d33;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "first first" "second second" "third third" "fourth fourth";
+  gap: 10px;
+}
+.frontend:hover {
+  background-color: transparent;
+}
+#frontend1 {
+  grid-area: first;
+}
+#frontend2 {
+  grid-area: second second;
+}
+#frontend3 {
+  grid-area: third third;
+}
+#frontend4 {
+  grid-area: fourth fourth;
+}
+#backend {
+  background: #046d33;
+  padding: 15px;
+}
+.mytestimonials {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 551px) {
+  .myservices {
+    height: auto;
+    width: 45%;
+  }
+  .frontend {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .myservices {
+    width: 90%;
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+  }
+  .frontend {
+    width: 90%;
+  }
+}

@@ -27,8 +27,24 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3" style={{ color: "red" }}>
-          This is my portfolio website, main test section.
+        <div className="port3">
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button
+            style={{
+              color: "green",
+              border: "2px solid green",
+              background: "transparent",
+              marginTop: "30px",
+              maxHeight: "50px",
+              maxWidth: "100px",
+              padding: "0px",
+            }}
+          >
+            <a>View project</a>
+          </button>
         </div>
       </div>
       <div className="port1">
@@ -39,7 +55,25 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button
+            style={{
+              color: "green",
+              border: "2px solid green",
+              background: "transparent",
+              marginTop: "30px",
+              maxHeight: "50px",
+              maxWidth: "100px",
+              padding: "0px",
+            }}
+          >
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
