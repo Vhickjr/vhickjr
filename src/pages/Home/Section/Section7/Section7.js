@@ -29,7 +29,13 @@ const Section7 = () => {
           </li>
           <li className="contact-list-item">
             <FaEnvelope className="icon" />
-            <p className="contact-details">victormathias001@gmail.com</p>
+            <a
+              style={{ textDecoration: "none", color: "blue" }}
+              href="mailto:victormathias001@gmail.com"
+            >
+              {" "}
+              <p className="contact-details">victormathias001@gmail.com</p>
+            </a>
           </li>
           <li className="contact-list-item">
             <FaMapMarkerAlt className="icon" />
@@ -67,7 +73,10 @@ const Section7 = () => {
               <button type="submit">Submit</button>
             </div>
           </form>
-          <FaArrowAltCircleUp id="goto" onClick={goToTop} />
+          <a href="#Top">
+            {" "}
+            <FaArrowAltCircleUp id="goto" onClick={goToTop} />
+          </a>
         </div>
       </div>
     </div>

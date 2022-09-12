@@ -17,7 +17,7 @@ function Navbarr() {
     >
       <Container fluid>
         <Navbar.Brand href="#" className="vicc4">
-          Victor Mathias
+          VM
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -31,7 +31,7 @@ function Navbarr() {
             <Nav.Link href="./Skills">Skills</Nav.Link>
             <Nav.Link href="./Services">Services</Nav.Link>
             <Nav.Link href="./Myportfolio">My Portfolio</Nav.Link>
-            <Nav.Link href="./Testimonial">Testimonial</Nav.Link>
+            {/*  <Nav.Link href="./Testimonial">Testimonial</Nav.Link>*/}
             <Nav.Link href="./Contactme">Contact Me</Nav.Link>
           </Nav>
           <Form className="d-flex">

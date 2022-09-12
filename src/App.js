@@ -7,7 +7,8 @@ import Home from "./pages/Home/Home";
 import Myportfolio from "./pages/Myportfolio/Myportfolio";
 import Services from "./pages/Services/Services";
 import Skills from "./pages/Skills/Skills";
-import Testimonial from "./pages/Testimonial/Testimonial";
+//import Testimonial from "./pages/Testimonial/Testimonial";
+//I'm merging Testimonial.js with  Services.js, therefore contents on testimonial will be in services.
 import Mailer from "./components/Comingsoon/mailer";
 
 function App() {
@@ -27,10 +28,10 @@ function App() {
           ></Route>
           <Route path="/Services" element={<Services></Services>}></Route>
           <Route path="/Skills" element={<Skills></Skills>}></Route>
-          <Route
+          {/*<Route
             path="/Testimonial"
             element={<Testimonial></Testimonial>}
-          ></Route>
+          ></Route> */}
         </Routes>
       </BrowserRouter>
     </div>
