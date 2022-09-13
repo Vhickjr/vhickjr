@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <div class="customcontainer">
       <nav>
-        <a id="Top"></a>
         <Navbar></Navbar>
       </nav>
       <main>
