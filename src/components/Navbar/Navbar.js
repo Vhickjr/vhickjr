@@ -10,22 +10,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Navbarr() {
   return (
     <Navbar
-      className="customcolor"
+      collapseOnSelect
+      bg="dark"
       variant="dark"
       expand="lg"
-      style={{ height: "100%" }}
+      style={{
+        height: "100%",
+        fontFamily: "Times New Roman",
+        paddingLeft: "30px",
+        paddingRight: "20px",
+      }}
     >
       <Container fluid>
-        <Navbar.Brand href="#" className="vicc4">
-          VM
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0 vicc4"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
+        <Navbar.Brand href="#home"> VM</Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="navbar-toggler-icon"
+        />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
             <Nav.Link href="./Home">Home</Nav.Link>
             <Nav.Link href="./Aboutme">About Me</Nav.Link>
             <Nav.Link href="./Skills">Skills</Nav.Link>
@@ -34,9 +37,11 @@ function Navbarr() {
             {/*  <Nav.Link href="./Testimonial">Testimonial</Nav.Link>*/}
             <Nav.Link href="./Contactme">Contact Me</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Button variant="outline-light">Hire me</Button>
-          </Form>
+          <Nav>
+            <Form className="d-flex">
+              <Button variant="outline-light">Hire me</Button>
+            </Form>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

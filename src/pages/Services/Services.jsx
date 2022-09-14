@@ -4,7 +4,6 @@ import { VscDebugAll } from "react-icons/vsc";
 import { FcEngineering } from "react-icons/fc";
 import { GrDeploy } from "react-icons/gr";
 import { GoVerified } from "react-icons/go";
-import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Testimonials from "./Testimonials";
 
@@ -12,9 +11,6 @@ const Container = styled.main`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 `;
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<Services />, rootElement);
 
 export default function Services() {
   return (

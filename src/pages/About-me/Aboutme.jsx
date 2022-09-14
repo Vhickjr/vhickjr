@@ -14,7 +14,7 @@ export default function Aboutme() {
     <div className="aboutme">
       {" "}
       <div className="main">
-        <div style={{ width: "50%" }}>
+        <div style={{ width: "60%" }}>
           <a href="/Home">
             <FaArrowCircleLeft id="arrow" />
           </a>
@@ -45,7 +45,7 @@ export default function Aboutme() {
             alt="My portrait"
             style={{
               height: "425px",
-              width: "110%",
+              width: "100%",
               borderRadius: "100%",
               padding: "2em",
             }}

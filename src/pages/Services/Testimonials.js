@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import posed, { PoseGroup } from "react-pose";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const AnimatedContainer = posed.div({
   enter: {
@@ -14,50 +15,33 @@ const AnimatedContainer = posed.div({
 
 const QuoteContainer = styled(AnimatedContainer)`
   display: flex;
-  align-items: center;
-  justify-content: center;
   background: #010101;
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+  height: 220px;
 `;
 
 const Container = styled.section`
   height: 100vh;
-  justify-items: center;
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
   border-radius: 4px;
-
   background: cyan;
 `;
 
 const Blockquote = styled.blockquote`
-  line-height: 1.5em;
+  line-height: 20px;
   font-style: italic;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 1.5em;
 `;
 
 const Cite = styled.cite`
-  color: gray;
+  color: white;
   align-self: flex-end;
   font-style: normal;
-`;
-
-const arrow = css`
-  background: transparent;
-  border: none;
-  cursor: pointer;
-`;
-
-const LeftArrow = styled.button`
-  grid-row: span 2;
-  grid-column: 1;
-  ${arrow}
-`;
-
-const RightArrow = styled.button`
-  grid-row: span 2;
-  grid-column: 3;
-  ${arrow}
+  padding-right: 0.5em;
 `;
 
 class Testimonials extends React.Component {
@@ -110,14 +94,37 @@ class Testimonials extends React.Component {
 
     return (
       <Container>
-        <LeftArrow onClick={this.previousQuote}>{"<"}</LeftArrow>
+        <AiOutlineLeft
+          style={{
+            color: "red",
+            zIndex: 10,
+            position: "relative",
+            left: "-500px",
+            top: "80px",
+          }}
+          onClick={this.previousQuote}
+        >
+          {"<"}
+        </AiOutlineLeft>
         <PoseGroup>
           <QuoteContainer key={currentQuote.client}>
             <Blockquote>{currentQuote.message}</Blockquote>
             <Cite>- {currentQuote.client}</Cite>
           </QuoteContainer>
         </PoseGroup>
-        <RightArrow onClick={this.nextQuote}>{">"}</RightArrow>
+
+        <AiOutlineRight
+          style={{
+            color: "red",
+            zIndex: 10,
+            position: "relative",
+            right: "-500px",
+            bottom: "95px",
+          }}
+          onClick={this.nextQuote}
+        >
+          {"<"}
+        </AiOutlineRight>
       </Container>
     );
   }

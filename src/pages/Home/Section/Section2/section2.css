@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 .sec2 {
   display: flex;
-  left: 0px;
   justify-content: center;
+  width: 100%;
 }
 
 .About {
-  font-family: "Nunito", sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .vizard1 {
   width: 45%;
@@ -19,13 +19,14 @@
   font-weight: 800;
   font-size: 2em;
   line-height: 32px;
+  color: black;
 }
 
 .content {
   line-height: 32.74px;
   font-weight: 400;
   font-size: 1.1em;
-  text-align: justify;
+  text-align: center;
   color: black;
 }
 
@@ -130,10 +131,9 @@
   }
 
   .button {
-    padding: 0.5em 1.5em 2em 1.5em;
     font-weight: 500;
     font-size: 1.25em;
-    line-height: 29.71px;
+    line-height: 15px;
     border-radius: 10px;
     padding-bottom: 40px;
   }

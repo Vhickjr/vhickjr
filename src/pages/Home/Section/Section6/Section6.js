@@ -84,7 +84,7 @@ const Section6 = () => {
           <br></br>
           <br></br>
           <div className="client--content">
-            <h2 className="client--quote"> They are good at what they do.</h2>
+            <h2 className="client--quote"> He did a geat job 😁.</h2>
             <br />
             <br />
             <h3 className="client--name"> Loveth</h3>
@@ -123,7 +123,7 @@ const Section6 = () => {
           <br></br>
           <br></br>
           <div className="client--content">
-            <h2 className="client--quote"> They are good at what they do.</h2>
+            <h2 className="client--quote"> I'm impressed!😀 .</h2>
             <br />
             <br />
             <h3 className="client--name"> Cisco</h3>

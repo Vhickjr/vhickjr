@@ -3,7 +3,6 @@ import "./skills.css";
 import Screenshot from "./Screenshot.png";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import LOGO from "./logo1.png";
-import Hamburger from "hamburger-react";
 
 export default function Skills() {
   return (
