@@ -1,14 +1,34 @@
 import React from "react";
 import "./myportfolio.css";
 import Screenshot from "./Screenshot.png";
-import { FaArrowCircleLeft } from "react-icons/fa";
+import LOGO from "./logo1.png";
 export default function Myportfolio() {
   return (
     <div className="myportfolio" style={{ width: "100vw" }}>
       <div>
+        {" "}
         <a href="/Home">
-          <FaArrowCircleLeft id="arrow2" />
+          {" "}
+          <img
+            src={LOGO}
+            alt="my logo"
+            style={{ height: "100px", width: "100px" }}
+            id="arrrow1"
+          ></img>
         </a>
+        <label for="check" id="arrrow2">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h1>
           {" "}
           <span style={{ color: "green" }}>My</span> Portfolio
@@ -32,17 +52,7 @@ export default function Myportfolio() {
           <p style={{ color: "white", paddingTop: "20px" }}>
             This is my portfolio website, built with ReactJS.
           </p>
-          <button
-            style={{
-              color: "green",
-              border: "2px solid green",
-              background: "transparent",
-              marginTop: "30px",
-              maxHeight: "50px",
-              maxWidth: "100px",
-              padding: "0px",
-            }}
-          >
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
             <a>View project</a>
           </button>
         </div>
@@ -57,20 +67,10 @@ export default function Myportfolio() {
         </div>
         <div className="port3">
           <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
+          <p style={{ color: "black", paddingTop: "20px" }}>
             This is my portfolio website, built with ReactJS.
           </p>
-          <button
-            style={{
-              color: "green",
-              border: "2px solid green",
-              background: "transparent",
-              marginTop: "30px",
-              maxHeight: "50px",
-              maxWidth: "100px",
-              padding: "0px",
-            }}
-          >
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
             <a>View project</a>
           </button>
         </div>
@@ -83,7 +83,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -93,7 +102,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -103,7 +121,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -113,7 +140,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -123,7 +159,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -133,7 +178,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -143,7 +197,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
       <div className="port1">
         <div className="port2">
@@ -153,7 +216,16 @@ export default function Myportfolio() {
             className="img-container img-container1 img-container2 "
           ></img>
         </div>
-        <div className="port3">This is my portfolio website</div>
+        <div className="port3">
+          {" "}
+          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
+          <p style={{ color: "white", paddingTop: "20px" }}>
+            This is my portfolio website, built with ReactJS.
+          </p>
+          <button style={{ borderRadius: "20px", background: "transparent" }}>
+            <a>View project</a>
+          </button>
+        </div>
       </div>
     </div>
   );

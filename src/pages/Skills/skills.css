@@ -5,7 +5,7 @@
 }
 
 a:hover {
-  color: white !important;
+  color: #046d33 !important;
 }
 .portt1 {
   width: 100%;
@@ -71,80 +71,6 @@ a:hover {
   position: relative;
   max-width: 100%;
 }
-@media only screen and (max-width: 1200px) {
-  /*Tablets [601px -> 1200px]*/
-
-  .portt2 {
-    height: 130px;
-    position: relative;
-    width: 30%;
-    display: flex;
-    margin-top: 180px;
-  }
-  .portt3 {
-    height: 276px;
-    width: 40%;
-    padding-left: 1%;
-    margin: 130px 1% 1% -40px;
-    z-index: 3;
-    opacity: 1;
-    background: #f4f4f4;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  /*Big smartphones [426px -> 600px]*/
-  .portt2 {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    display: flex;
-
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 40px;
-  }
-  .portt3 {
-    height: 200px;
-    width: 100%;
-    padding-left: 1%;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    z-index: 3;
-    opacity: 1;
-    background: #000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .portt2 {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 40px;
-  }
-  .portt3 {
-    height: 200px;
-    width: 100%;
-    padding-left: 1%;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    z-index: 3;
-    opacity: 1;
-    background: #000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
 
 #arrrow1 {
   position: absolute;
@@ -155,7 +81,7 @@ a:hover {
 #arrrow2 {
   color: white;
   position: absolute;
-  top: 30px;
+  top: 47px;
   right: 30px;
   z-index: 4;
 }
@@ -205,6 +131,81 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   transform-origin: bottom;
   width: 50%;
   transform: translate(30px, -11px) rotatez(45deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+
+  .portt2 {
+    height: 130px;
+    position: relative;
+    width: 30%;
+    display: flex;
+    margin-top: 180px;
+  }
+  .portt3 {
+    height: 276px;
+    width: 40%;
+    padding-left: 1%;
+    margin: 130px 1% 1% -40px;
+    z-index: 3;
+    opacity: 1;
+    background: #f4f4f4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .portt2 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .portt3 {
+    height: 250px;
+    width: 100%;
+    padding-left: 1%;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    z-index: 3;
+    opacity: 1;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .portt2 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .portt3 {
+    height: 250px;
+    width: 100%;
+    padding-left: 1%;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    z-index: 3;
+    opacity: 1;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /* 1. for the item to maintain its original stacking context, use position relative on the main container,

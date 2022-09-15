@@ -27,7 +27,7 @@ const Section7 = () => {
             <BsWhatsapp className="icon" />
             <a
               href="https://wa.me/message/J4QIEDLFNOBAK1"
-              style={{ textDecoration: "none", color: "blue" }}
+              style={{ textDecoration: "none", color: "white" }}
             >
               <p className="contact-details">+234 813 962 4288</p>
             </a>
@@ -35,7 +35,7 @@ const Section7 = () => {
           <li className="contact-list-item">
             <FaEnvelope className="icon" />
             <a
-              style={{ textDecoration: "none", color: "blue" }}
+              style={{ textDecoration: "none", color: "white" }}
               href="mailto:victormathias001@gmail.com"
             >
               {" "}
