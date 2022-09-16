@@ -8,7 +8,7 @@ import Portrait from "./carousel1.jpg";
 
 const Section6 = () => {
   return (
-    <Carousel variant="dark" className="testimonials">
+    <Carousel fade variant="dark" className="testimonials">
       <Carousel.Item>
         <img className="d-block w-100 secc6" src={Portrait} alt="First slide" />
         <Carousel.Caption>
