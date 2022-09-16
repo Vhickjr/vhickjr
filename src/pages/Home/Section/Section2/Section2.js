@@ -8,7 +8,11 @@ export default function Section2() {
       <Container
         fluid
         style={{
-          padding: "2.5em",
+          paddingLeft: "auto",
+          paddingRight: "auto",
+          paddingTop: "2.5em",
+          paddingBottom: "2.5em",
+
           boxSizing: "border-box",
           display: "flex",
           justifyContent: "space-between",

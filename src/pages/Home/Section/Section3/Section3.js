@@ -9,13 +9,13 @@ function Section3() {
         <div
           class="progress-bar bg-success"
           role="progressbar"
-          style={{ width: "25%" }}
-          aria-valuenow="25"
+          style={{ width: "95%" }}
+          aria-valuenow="95"
           aria-valuemin="0"
           aria-valuemax="100"
         >
           {" "}
-          25%
+          95%
         </div>
       </div>
       <br></br>
@@ -25,43 +25,43 @@ function Section3() {
         <div
           class="progress-bar bg-success"
           role="progressbar"
-          style={{ width: "50%" }}
-          aria-valuenow="50"
+          style={{ width: "80%" }}
+          aria-valuenow="80"
           aria-valuemin="0"
           aria-valuemax="100"
         >
           {" "}
-          50%
+          80%
         </div>
       </div>
       <br></br>
 
-      <h3 style={{ color: "white", textAlign: "start" }}>Javascript</h3>
+      <h3 style={{ color: "white", textAlign: "start" }}>Javascript/Node</h3>
       <div class="progress">
         <div
           class="progress-bar bg-success"
           role="progressbar"
-          style={{ width: "75%" }}
-          aria-valuenow="75"
+          style={{ width: "70%" }}
+          aria-valuenow="70"
           aria-valuemin="0"
           aria-valuemax="100"
         >
-          75%
+          70%
         </div>
       </div>
       <br></br>
 
-      <h3 style={{ color: "white", textAlign: "start" }}>ReactJS</h3>
+      <h3 style={{ color: "white", textAlign: "start" }}>ReactJS/NextJS</h3>
       <div class="progress">
         <div
           class="progress-bar bg-success"
           role="progressbar"
-          style={{ width: "100%" }}
-          aria-valuenow="100"
+          style={{ width: "70%" }}
+          aria-valuenow="70"
           aria-valuemin="0"
           aria-valuemax="100"
         >
-          100%
+          70%
         </div>
       </div>
       <br></br>

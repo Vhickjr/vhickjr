@@ -1,10 +1,28 @@
 import React, { Component } from "react";
 import "./contactme.css";
-
+import LOGO from "./logo1.png";
 export default class Contactme extends Component {
   render() {
     return (
       <div className="contactme">
+        <div>
+          {" "}
+          <a href="/Home">
+            {" "}
+            <img
+              src={LOGO}
+              alt="my logo"
+              style={{ height: "100px", width: "100px" }}
+              id="arrrow1"
+            ></img>
+          </a>
+          <label for="check" id="arrrow2">
+            <input type="checkbox" id="check" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
         <div
           style={{
             marginTop: "-20px",
@@ -25,6 +43,25 @@ export default class Contactme extends Component {
             marginTop: "100px",
           }}
         >
+          <div className="myform">
+            <div>
+              <form>
+                <div className="contact-inputt">
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div className="contact-inputt">
+                  <input type="text" placeholder="Phone Number" />
+                </div>
+                <div className="contact-inputt">
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div className="contact-textareaa">
+                  <textarea placeholder="Message"></textarea>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
           <div className="mymap">
             {" "}
             <div className="earth3dmap-com">
@@ -57,25 +94,6 @@ export default class Contactme extends Component {
                   Earth3DMap.com
                 </a>
               </div>
-            </div>
-          </div>
-          <div className="myform">
-            <div>
-              <form>
-                <div className="contact-inputt">
-                  <input type="text" placeholder="Name" />
-                </div>
-                <div className="contact-inputt">
-                  <input type="text" placeholder="Phone Number" />
-                </div>
-                <div className="contact-inputt">
-                  <input type="email" placeholder="Email" />
-                </div>
-                <div className="contact-textareaa">
-                  <textarea placeholder="Message"></textarea>
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>

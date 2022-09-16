@@ -9,15 +9,30 @@ import {
   FaBusinessTime,
   FaDesktop,
 } from "react-icons/fa";
+import LOGO from "./logo1.png";
 export default function Aboutme() {
   return (
     <div className="aboutme">
-      {" "}
+      <div>
+        {" "}
+        <a href="/Home">
+          {" "}
+          <img
+            src={LOGO}
+            alt="my logo"
+            style={{ height: "100px", width: "100px" }}
+            id="arrrow1"
+          ></img>
+        </a>
+        <label for="check" id="arrrow2">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>{" "}
       <div className="main">
-        <div style={{ width: "50%" }}>
-          <a href="/Home">
-            <FaArrowCircleLeft id="arrow" />
-          </a>
+        <div style={{ width: "60%" }}>
           <h2
             style={{
               fontWeight: "800",
@@ -25,7 +40,7 @@ export default function Aboutme() {
               lineHeight: "64px",
               fontFamily: "Nunito",
               fontStyle: "normal",
-              marginTop: "10px",
+              marginTop: "90px",
             }}
           >
             About me
@@ -45,7 +60,7 @@ export default function Aboutme() {
             alt="My portrait"
             style={{
               height: "425px",
-              width: "110%",
+              width: "100%",
               borderRadius: "100%",
               padding: "2em",
             }}

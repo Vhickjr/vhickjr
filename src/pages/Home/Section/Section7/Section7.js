@@ -9,12 +9,12 @@ import {
   FaArrowAltCircleUp,
   FaGithubSquare,
 } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 import "./section7.css";
 
 const Section7 = () => {
   const goToTop = () => {
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   };
 
@@ -24,13 +24,18 @@ const Section7 = () => {
       <div className="wrapper">
         <ul className="contact-list">
           <li className="contact-list-item">
-            <FaPhoneAlt className="icon" />
-            <p className="contact-details">+234 813 962 4288</p>
+            <BsWhatsapp className="icon" />
+            <a
+              href="https://wa.me/message/J4QIEDLFNOBAK1"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <p className="contact-details">+234 813 962 4288</p>
+            </a>
           </li>
           <li className="contact-list-item">
             <FaEnvelope className="icon" />
             <a
-              style={{ textDecoration: "none", color: "blue" }}
+              style={{ textDecoration: "none", color: "white" }}
               href="mailto:victormathias001@gmail.com"
             >
               {" "}

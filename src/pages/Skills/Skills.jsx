@@ -1,26 +1,31 @@
 import React from "react";
 import "./skills.css";
 import Screenshot from "./Screenshot.png";
-import { FaArrowCircleLeft } from "react-icons/fa";
 import LOGO from "./logo1.png";
-import Hamburger from "hamburger-react";
 
 export default function Skills() {
   return (
     <div className="skills">
       {/* <Hamburger color="white" />*/}
-      <img
-        src={LOGO}
-        alt="my logo"
-        style={{ height: "100px", width: "100px" }}
-        id="arrrow1"
-      ></img>
-      <label for="check" id="arrrow2">
-        <input type="checkbox" id="check" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+      <div>
+        {" "}
+        <a href="/Home">
+          {" "}
+          <img
+            src={LOGO}
+            alt="my logo"
+            style={{ height: "100px", width: "100px" }}
+            id="arrrow1"
+          ></img>
+        </a>
+        <label for="check" id="arrrow2">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
       <br></br>
       <br></br>
       <br></br>
@@ -33,12 +38,12 @@ export default function Skills() {
         style={{
           display: "flex",
           justifyContent: "space-evenly",
-
+          padding: "1em",
           flexWrap: "wrap",
         }}
       >
         {" "}
-        <div style={{ width: "600px" }}>
+        <div style={{ width: "500px" }}>
           <h3 style={{ color: "white", textAlign: "start" }}>HTML</h3>
           <div class="progress">
             <div
@@ -83,7 +88,7 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div style={{ width: "600px" }}>
+        <div style={{ width: "500px" }}>
           <h3 style={{ color: "white", textAlign: "start" }}>
             Javascript/Nodejs
           </h3>
@@ -144,20 +149,10 @@ export default function Skills() {
             <h1 style={{ color: "green", paddingTop: "40px" }}>
               Victor Mathias
             </h1>
-            <p style={{ color: "white", paddingTop: "20px" }}>
+            <p style={{ color: "black", paddingTop: "20px" }}>
               This is my portfolio website, built with ReactJS.
             </p>
-            <button
-              style={{
-                color: "green",
-                border: "2px solid green",
-                background: "transparent",
-                marginTop: "30px",
-                maxHeight: "50px",
-                maxWidth: "100px",
-                padding: "0px",
-              }}
-            >
+            <button style={{ borderRadius: "20px", background: "transparent" }}>
               <a>View project</a>
             </button>
           </div>
@@ -174,20 +169,10 @@ export default function Skills() {
             <h1 style={{ color: "green", paddingTop: "40px" }}>
               Victor Mathias
             </h1>
-            <p style={{ color: "white", paddingTop: "20px" }}>
+            <p style={{ color: "black", paddingTop: "20px" }}>
               This is my portfolio website, built with ReactJS.
             </p>
-            <button
-              style={{
-                color: "green",
-                border: "2px solid green",
-                background: "transparent",
-                marginTop: "30px",
-                maxHeight: "50px",
-                maxWidth: "100px",
-                padding: "0px",
-              }}
-            >
+            <button style={{ borderRadius: "20px", background: "transparent" }}>
               <a>View project</a>
             </button>
           </div>
@@ -204,20 +189,10 @@ export default function Skills() {
             <h1 style={{ color: "green", paddingTop: "40px" }}>
               Victor Mathias
             </h1>
-            <p style={{ color: "white", paddingTop: "20px" }}>
+            <p style={{ color: "black", paddingTop: "20px" }}>
               This is my portfolio website, built with ReactJS.
             </p>
-            <button
-              style={{
-                color: "green",
-                border: "2px solid green",
-                background: "transparent",
-                marginTop: "30px",
-                maxHeight: "50px",
-                maxWidth: "100px",
-                padding: "0px",
-              }}
-            >
+            <button style={{ borderRadius: "20px", background: "transparent" }}>
               <a>View project</a>
             </button>
           </div>
@@ -234,20 +209,10 @@ export default function Skills() {
             <h1 style={{ color: "green", paddingTop: "40px" }}>
               Victor Mathias
             </h1>
-            <p style={{ color: "white", paddingTop: "20px" }}>
+            <p style={{ color: "black", paddingTop: "20px" }}>
               This is my portfolio website, built with ReactJS.
             </p>
-            <button
-              style={{
-                color: "green",
-                border: "2px solid green",
-                background: "transparent",
-                marginTop: "30px",
-                maxHeight: "50px",
-                maxWidth: "100px",
-                padding: "0px",
-              }}
-            >
+            <button style={{ borderRadius: "20px", background: "transparent" }}>
               <a>View project</a>
             </button>
           </div>
@@ -264,20 +229,10 @@ export default function Skills() {
             <h1 style={{ color: "green", paddingTop: "40px" }}>
               Victor Mathias
             </h1>
-            <p style={{ color: "white", paddingTop: "20px" }}>
+            <p style={{ color: "black", paddingTop: "20px" }}>
               This is my portfolio website, built with ReactJS.
             </p>
-            <button
-              style={{
-                color: "green",
-                border: "2px solid green",
-                background: "transparent",
-                marginTop: "30px",
-                maxHeight: "50px",
-                maxWidth: "100px",
-                padding: "0px",
-              }}
-            >
+            <button style={{ borderRadius: "20px", background: "transparent" }}>
               <a>View project</a>
             </button>
           </div>

@@ -89,6 +89,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
+  font-family: "Times New Roman", Times, serif;
   color: var(--primary-color);
   letter-spacing: 0;
   margin-top: 1px;
@@ -100,9 +101,10 @@ h3 {
   color: var(--primary-color);
   font-weight: 400;
   font-style: normal;
+  font-family: "Times New Roman", Times, serif;
   margin-top: 5px;
   padding-bottom: 50px;
-  padding-left: 20px;
+  padding-left: 45px;
   letter-spacing: 0;
   line-height: 27px;
   width: 275px;

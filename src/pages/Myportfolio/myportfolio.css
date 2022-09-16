@@ -27,7 +27,7 @@ a:hover {
   margin: 200px 1% 1% -40px;
   z-index: 3;
   opacity: 1;
-  background: #000;
+  background: rgba(217, 217, 217, 1);
   border-radius: 0px 0px 15px 15px;
 }
 .img-container {
@@ -70,6 +70,19 @@ a:hover {
   position: relative;
   max-width: 100%;
 }
+#arrrow1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 4;
+}
+#arrrow2 {
+  color: white;
+  position: absolute;
+  top: 47px;
+  right: 30px;
+  z-index: 4;
+}
 @media only screen and (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/
 
@@ -87,7 +100,7 @@ a:hover {
     margin: 130px 1% 1% -40px;
     z-index: 3;
     opacity: 1;
-    background: #000;
+
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -114,7 +127,7 @@ a:hover {
     margin-bottom: 40px;
     z-index: 3;
     opacity: 1;
-    background: #000;
+
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -139,7 +152,7 @@ a:hover {
     margin-bottom: 40px;
     z-index: 3;
     opacity: 1;
-    background: #000;
+
     padding-top: 10px;
     padding-bottom: 10px;
   }

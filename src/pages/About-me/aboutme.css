@@ -51,6 +51,19 @@
   font-size: 26px;
   font-weight: 500;
 }
+#arrrow1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 4;
+}
+#arrrow2 {
+  color: white;
+  position: absolute;
+  top: 47px;
+  right: 30px;
+  z-index: 4;
+}
 
 @media only screen and (min-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
