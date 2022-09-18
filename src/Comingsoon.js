@@ -1,6 +1,7 @@
 import pizza1 from "./pizza1.png";
 import "./App.css";
 import Mailer from "./components/Comingsoon/mailer";
+import React from "react";
 
 function Comingsoon() {
   return (

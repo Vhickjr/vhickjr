@@ -75,7 +75,7 @@ a:hover {
 #arrrow1 {
   position: absolute;
   top: 30px;
-  left: 30px;
+  left: 2px;
   z-index: 4;
 }
 #arrrow2 {

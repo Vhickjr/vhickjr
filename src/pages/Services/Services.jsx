@@ -6,15 +6,40 @@ import { GrDeploy } from "react-icons/gr";
 import { GoVerified } from "react-icons/go";
 import styled from "styled-components";
 import Testimonials from "./Testimonials";
-
+import LOGO from "./logo1.png";
 const Container = styled.main`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 `;
 
-export default function Services() {
+const Services = () => {
   return (
     <div className="services">
+      <div>
+        {" "}
+        <a href="/Home">
+          {" "}
+          <img
+            src={LOGO}
+            alt="my logo"
+            style={{ height: "100px", width: "100px" }}
+            id="arrrow1"
+          ></img>
+        </a>
+        <label for="check" id="arrrow2">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>{" "}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <h1>My Services</h1>
       <div className="services-content-wrapper ">
         <div className="myservices">
@@ -132,7 +157,10 @@ export default function Services() {
           </div>
         </div>
       </div>
-
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="mytestimonials">
         {" "}
         <Container>
@@ -141,8 +169,8 @@ export default function Services() {
       </div>
     </div>
   );
-}
-
+};
+export default Services;
 /*Services and Testimonial, I merged them cause I don't want too many pages
       on my portfolio website. I want the site to be specific. Adding my
       services, frontend, backend tech stack,testimonials, */

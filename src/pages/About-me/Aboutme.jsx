@@ -31,6 +31,13 @@ export default function Aboutme() {
           <span></span>
         </label>
       </div>{" "}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="main">
         <div style={{ width: "60%" }}>
           <h2

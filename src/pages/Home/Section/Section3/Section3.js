@@ -1,3 +1,4 @@
+import React from "react";
 import "./section3.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function Section3() {
