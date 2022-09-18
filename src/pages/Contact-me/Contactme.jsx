@@ -22,6 +22,13 @@ export default class Contactme extends Component {
             <span></span>
             <span></span>
           </label>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
         <div
           style={{

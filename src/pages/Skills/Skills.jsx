@@ -33,7 +33,6 @@ export default function Skills() {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
       <div
         style={{
           display: "flex",
