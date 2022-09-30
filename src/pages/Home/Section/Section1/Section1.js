@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./section1.css";
 import "font-awesome/css/font-awesome.min.css";
 
 const Section1 = () => {
+  useEffect(() => {
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "Freelancer";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "software developer";
+      }, 4000);
+      setTimeout(() => {
+        text.textContent = "YouTuber";
+      }, 8000); //1s = 1000 milliseconds
+    };
+
+    textLoad();
+    setInterval(textLoad, 12000);
+  }, []);
   return (
     <div>
       <div className="contain">
-        <h2 style={{ color: "white", alignItems: "center" }} className="lolu">
-          Hi! I’m Victor,<br></br>A Frontend software developer
+        <h2 className="lolu">
+          {" "}
+          <div class="containertext">
+            <span class="text first-text">I'm a </span>
+            <span class="text sec-text">Freelancer</span>
+          </div>
         </h2>
       </div>
       <div className="social-menu">

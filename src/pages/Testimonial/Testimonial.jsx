@@ -1,20 +1,26 @@
 import React from "react";
 import "./testimonial.css";
 export default function Testimonial() {
+  function openNav() {
+    document.getElementById("myNav").style.display = "block";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+  }
   return (
     <div>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          &times;
+      <div id="myNav" className="overlay">
+        <a href="javascript:void(0)" className="closebtn" onclick={closeNav()}>
+          ×
         </a>
-        <div class="overlay-content">
+        <div className="overlay-content">
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Clients</a>
           <a href="#">Contact</a>
         </div>
       </div>
-
       <h2>Fullscreen Overlay Nav Example</h2>
       <p>
         Click on the element below to open the fullscreen overlay navigation
@@ -23,8 +29,8 @@ export default function Testimonial() {
       <p>
         In this example, the navigation menu will slide in, from left to right:
       </p>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-        &#9776; open
+      <span style={{ fontSize: 30, cursor: "pointer" }} onclick={openNav()}>
+        ☰ open
       </span>
     </div>
   );
