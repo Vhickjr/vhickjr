@@ -1,3 +1,32 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+.containertext {
+  width: 435px;
+}
+.containertext .text {
+  position: relative;
+  color: #4070f4;
+  font-size: 30px;
+  font-weight: 600;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.containertext .text.first-text {
+  color: #fff;
+}
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid #4070f4;
+  animation: animate 4s steps(12) infinite;
+}
+
 .contain {
   display: flex;
   height: 400px;
@@ -6,13 +35,8 @@
 }
 
 .lolu {
-  height: 41px;
   margin-top: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 41px;
+  width: 435px;
 }
 
 h1 {
@@ -21,7 +45,7 @@ h1 {
 
 .social-menu ul {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
@@ -71,6 +95,16 @@ h1 {
 .social-menu ul li:nth-child(5) a:hover {
   background-color: #0077b5;
 }
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/
 }
@@ -78,19 +112,30 @@ h1 {
   /*Big smartphones [426px -> 600px]*/
   .social-menu ul {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
     margin: 0;
     display: flex;
   }
+  .containertext {
+    width: 250px;
+  }
+  .containertext .text {
+    position: relative;
+    color: #4070f4;
+    font-size: 25px;
+    font-weight: 450;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 }
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
   .social-menu ul {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
@@ -116,5 +161,16 @@ h1 {
     line-height: 50px;
     transition: 0.5s;
     padding-bottom: 10px;
+  }
+  .containertext {
+    width: 250px;
+  }
+  .containertext .text {
+    position: relative;
+    color: #4070f4;
+    font-size: 25px;
+    font-weight: 450;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
   }
 }
