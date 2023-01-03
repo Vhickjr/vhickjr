@@ -1,39 +1,20 @@
 import React from "react";
 import "./myportfolio.css";
 import Screenshot from "./Screenshot.png";
-import LOGO from "./logo1.png";
+import Banner from "../../components/banner/Banner";
+
 export default function Myportfolio() {
   return (
     <div className="myportfolio" style={{ width: "100vw" }}>
       <div>
         {" "}
-        <a href="/Home">
-          {" "}
-          <img
-            src={LOGO}
-            alt="my logo"
-            style={{ height: "100px", width: "100px" }}
-            id="arrrow1"
-          ></img>
-        </a>
-        <label for="check" id="arrrow2">
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <Banner></Banner>
       </div>
-      <div>
+      <div style={{ marginTop: "100px" }}>
         <h1>
           {" "}
-          <span style={{ color: "green" }}>My</span> Portfolio
+          <span style={{ color: "green", marginTop: "100px" }}>My</span>{" "}
+          Portfolio
         </h1>
         <br></br>
         <h4>

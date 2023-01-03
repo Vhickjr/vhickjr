@@ -1,38 +1,18 @@
 import React, { Component } from "react";
 import "./contactme.css";
-import LOGO from "./logo1.png";
+import Banner from "../../components/banner/Banner";
+
 export default class Contactme extends Component {
   render() {
     return (
       <div className="contactme">
         <div>
           {" "}
-          <a href="/Home">
-            {" "}
-            <img
-              src={LOGO}
-              alt="my logo"
-              style={{ height: "100px", width: "100px" }}
-              id="arrrow1"
-            ></img>
-          </a>
-          <label for="check" id="arrrow2">
-            <input type="checkbox" id="check" />
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+          <Banner></Banner>
         </div>
         <div
           style={{
-            marginTop: "-20px",
+            marginTop: "100px",
           }}
         >
           <h1 style={{ color: "white" }}>

@@ -1,11 +1,8 @@
 .contactme {
   background: black;
-  overflow-y: scroll;
-  height: 100vh;
   justify-items: center;
   align-items: center;
   align-content: center;
-  padding: 3em;
   width: 100%;
 }
 .mymap {

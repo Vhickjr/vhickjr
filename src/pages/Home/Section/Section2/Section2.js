@@ -16,7 +16,7 @@ export default function Section2() {
           boxSizing: "border-box",
           display: "flex",
           justifyContent: "space-between",
-          backgroundColor: "whitesmoke",
+          backgroundColor: "white",
           flexWrap: "wrap",
         }}
       >
@@ -57,7 +57,12 @@ export default function Section2() {
               </p>
 
               <div className="button-container">
-                <Button className="button Resume">View Resume</Button>
+                <Button className="button Resume">
+                  <a href="https://universityoflagos-my.sharepoint.com/:b:/g/personal/190403081_live_unilag_edu_ng/Ef7_wIM_aIBCuYNDR1xw-aQByMc0k0ihS39HK71td9OKqg?e=WYnncG">
+                    {" "}
+                    View Resume
+                  </a>
+                </Button>
                 <Button className="button Hire">Hire Me</Button>
               </div>
             </div>

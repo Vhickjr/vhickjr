@@ -13,7 +13,7 @@ function PopUp() {
       <button onClick={handleClickOpen}>Open popup</button>
       <div>
         {popup ? (
-          <div className="main">
+          <div className="mainpop">
             <div className="popup">
               <div className="popup-header">
                 <h1>popup</h1>

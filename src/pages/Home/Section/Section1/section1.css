@@ -2,11 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 
 .containertext {
-  width: 435px;
 }
 .containertext .text {
   position: relative;
-  color: #4070f4;
+  color: white;
   font-size: 30px;
   font-weight: 600;
   box-sizing: border-box;
@@ -35,8 +34,6 @@
 }
 
 .lolu {
-  margin-top: 50px;
-  width: 435px;
 }
 
 h1 {
@@ -120,11 +117,10 @@ h1 {
     display: flex;
   }
   .containertext {
-    width: 250px;
   }
   .containertext .text {
     position: relative;
-    color: #4070f4;
+    color: white;
     font-size: 25px;
     font-weight: 450;
     box-sizing: border-box;
@@ -146,8 +142,8 @@ h1 {
     position: relative;
     top: 55px;
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: white;
     text-align: center;
@@ -157,19 +153,18 @@ h1 {
   }
   .social-menu ul li .fa {
     color: #000000;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 50px;
     transition: 0.5s;
     padding-bottom: 10px;
   }
   .containertext {
-    width: 250px;
   }
   .containertext .text {
     position: relative;
     color: #4070f4;
-    font-size: 25px;
-    font-weight: 450;
+    font-size: 30px;
+    font-weight: 600;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }

@@ -6,7 +6,7 @@ import { GrDeploy } from "react-icons/gr";
 import { GoVerified } from "react-icons/go";
 import styled from "styled-components";
 import Testimonials from "./Testimonials";
-import LOGO from "./logo1.png";
+import Banner from "../../components/banner/Banner";
 const Container = styled.main`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -17,30 +17,9 @@ const Services = () => {
     <div className="services">
       <div>
         {" "}
-        <a href="/Home">
-          {" "}
-          <img
-            src={LOGO}
-            alt="my logo"
-            style={{ height: "100px", width: "100px" }}
-            id="arrrow1"
-          ></img>
-        </a>
-        <label for="check" id="arrrow2">
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>{" "}
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h1>My Services</h1>
+        <Banner></Banner>
+      </div>
+      <h1 style={{ marginTop: "100px" }}>My Services</h1>
       <div className="services-content-wrapper ">
         <div className="myservices">
           <VscDebugAll id="myservices"></VscDebugAll>

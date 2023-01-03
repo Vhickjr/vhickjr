@@ -1,44 +1,22 @@
 import React from "react";
 import "./skills.css";
 import Screenshot from "./Screenshot.png";
-import LOGO from "./logo1.png";
+import Banner from "../../components/banner/Banner";
 
 export default function Skills() {
   return (
     <div className="skills">
-      {/* <Hamburger color="white" />*/}
       <div>
         {" "}
-        <a href="/Home">
-          {" "}
-          <img
-            src={LOGO}
-            alt="my logo"
-            style={{ height: "100px", width: "100px" }}
-            id="arrrow1"
-          ></img>
-        </a>
-        <label for="check" id="arrrow2">
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+        <Banner></Banner>
       </div>
-
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <div
         style={{
           display: "flex",
           justifyContent: "space-evenly",
           padding: "1em",
           flexWrap: "wrap",
+          marginTop: "100px",
         }}
       >
         {" "}
