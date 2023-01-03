@@ -1,29 +1,19 @@
 .aboutme {
   overflow-x: hidden;
-
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr 2fr 1fr;
-  grid-template-areas:
-    "main"
-    "item1"
-    "item2";
+  position: relative;
 }
 
 .main {
   text-align: center;
-  grid-area: main;
   background: black;
   color: #f4f4f4;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+  margin-top: 100px;
 }
 .item1 {
-  grid-area: item1;
   background: #f4f4f4;
   color: black;
   display: "flex";
@@ -31,7 +21,6 @@
   align-items: center;
 }
 .item2 {
-  grid-area: item2;
   background: black;
   color: #f4f4f4;
   justify-content: center;

@@ -16,7 +16,6 @@ function Navbarr() {
       variant="dark"
       expand="lg"
       style={{
-        height: "100%",
         fontFamily: "Times New Roman",
         paddingLeft: "30px",
         paddingRight: "20px",
@@ -30,7 +29,7 @@ function Navbarr() {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="./Home">Home</Nav.Link>
+            {/*<Nav.Link href="/">Home</Nav.Link>*/}
             <Nav.Link href="./Aboutme">About Me</Nav.Link>
             <Nav.Link href="./Skills">Skills</Nav.Link>
             <Nav.Link href="./Services">Services</Nav.Link>

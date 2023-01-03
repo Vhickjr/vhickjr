@@ -13,10 +13,10 @@ import Section7 from "../Home/Section/Section7/Section7";
 export default function Home() {
   return (
     <div class="customcontainer">
-      <nav>
-        <a id="Top"></a>
+      <a id="Top">
         <Navbar></Navbar>
-      </nav>
+      </a>
+
       <main>
         <Section1></Section1>
       </main>

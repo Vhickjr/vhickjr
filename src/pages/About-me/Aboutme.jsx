@@ -1,5 +1,6 @@
 import React from "react";
 import "./aboutme.css";
+import Banner from "../../components/banner/Banner";
 import Myportrait from "./vhickjr2.png";
 import {
   FaArrowCircleLeft,
@@ -9,28 +10,14 @@ import {
   FaBusinessTime,
   FaDesktop,
 } from "react-icons/fa";
-import LOGO from "./logo1.png";
+
 export default function Aboutme() {
   return (
     <div className="aboutme">
       <div>
         {" "}
-        <a href="/Home">
-          {" "}
-          <img
-            src={LOGO}
-            alt="my logo"
-            style={{ height: "100px", width: "100px" }}
-            id="arrrow1"
-          ></img>
-        </a>
-        <label for="check" id="arrrow2">
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>{" "}
+        <Banner></Banner>
+      </div>
       <div className="main">
         <div style={{ width: "60%" }}>
           <h2
@@ -40,7 +27,7 @@ export default function Aboutme() {
               lineHeight: "64px",
               fontFamily: "Nunito",
               fontStyle: "normal",
-              marginTop: "90px",
+              paddingTop: "50px",
             }}
           >
             About me
