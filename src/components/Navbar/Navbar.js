@@ -39,7 +39,9 @@ function Navbarr() {
           </Nav>
           <Nav>
             <Form className="d-flex">
-              <Button variant="outline-light">Hire me</Button>
+              <Button variant="outline-light">
+                <a href="mailto:victormathias001@gmail.com"></a>Hire me
+              </Button>
             </Form>
           </Nav>
         </Navbar.Collapse>
