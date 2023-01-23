@@ -34,14 +34,11 @@
   height: 3.5em;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-evenly;
+  display: inline-block;
 }
 
 .button {
-  padding: 0.5em 1.5em 2em 1.5em;
+  padding: 0.5em;
   font-weight: 500;
   font-size: 1.25em;
   line-height: 29.71px;
@@ -49,29 +46,30 @@
 }
 
 .Resume {
-  background-color: white !important;
-  color: black;
+  background-color: black;
+  color: white;
   border: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .Resume:hover {
-  background-color: black !important;
+  background-color: #38004c !important;
   color: white;
-  border: 1px solid black;
+  border: 1px solid #38004c !important;
   -webkit-transition-delay: 125ms;
   transition-delay: 125ms;
 }
 
 .Hire {
-  background-color: white !important;
-  color: black;
+  background-color: black;
+  color: white;
   border: 1px solid black;
 }
 
 .Hire:hover {
-  background-color: black !important;
+  background-color: #38004c !important;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #38004c !important;
   -webkit-transition-delay: 125ms;
   transition-delay: 125ms;
 }
@@ -94,19 +92,18 @@
     height: 3.5em;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .button {
-    padding: 0.5em 1.5em 2em 1.5em;
+    padding: 0.5em;
     font-weight: 500;
     font-size: 1.25em;
     line-height: 29.71px;
-    border-radius: 10;
-    padding-bottom: 40px;
+    border-radius: 10px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -123,17 +120,17 @@
     height: 3.5em;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-evenly;
   }
 
   .button {
+    padding: 0.5em;
     font-weight: 500;
     font-size: 1.25em;
-    line-height: 15px;
+    line-height: 29.71px;
     border-radius: 10px;
-    padding-bottom: 40px;
   }
 }

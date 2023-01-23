@@ -28,9 +28,9 @@ export default function Section4() {
           <div>
             <h3 className="component--title"> Web Designing</h3>
             <p className="component--text">
-              Our team implements beautiful, stunning and unique designs using
-              React JS. Our websites are user friendly and provide an awesome
-              experience for all users.{" "}
+              I create visually stunning and unique designs using React JS,
+              resulting in user-friendly websites that provide an exceptional
+              experience for all users.
             </p>
           </div>
         </div>
@@ -41,9 +41,9 @@ export default function Section4() {
           <div className="component--design">
             <h3 className="component--title"> GitHub / Git Experts</h3>
             <p className="component--text">
-              We are knowledgeable about the workings of Github and Git, so you
-              can just go to sleep and rely on us to take care of maintaining
-              open-source codes for your projects{" "}
+              I am knowledgeable about the workings of GitHub and Git, so you
+              can rest easy and rely on me to take care of maintaining
+              open-source codes for your projects.{" "}
             </p>
           </div>
         </div>
@@ -54,11 +54,12 @@ export default function Section4() {
             <FaMicroblog />
           </div>
           <div>
-            <h3 className="component--title"> Content Creators</h3>
+            <h3 className="component--title"> UI/UX design</h3>
             <p className="component--text">
-              We have awesome content writers on our team. Theu can put together
-              great material for your project and help you blog about it on any
-              platform of your choice.{" "}
+              As a software developer, while I may not specialize in UI/UX
+              design, I am able to create simple designs and source them to
+              complement my development work, ensuring a cohesive and
+              user-friendly end-product for your business.{" "}
             </p>
           </div>
         </div>
@@ -69,9 +70,9 @@ export default function Section4() {
           <div>
             <h3 className="component--title"> SEO Experts</h3>
             <p className="component--text">
-              Leave your Search Engine Optimization to us. We can help your
+              Leave your search engine optimization to me. I can help your
               customers find you easily with curated keywords, on any search
-              engine,especially Google.You are in good hands.
+              engine, especially Google. You are in good hands.
             </p>
           </div>
         </div>

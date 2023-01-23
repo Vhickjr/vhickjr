@@ -16,11 +16,28 @@ const Card = ({ item }) => {
                   />
                 </div>
                 <div className="port3">
-                  <div className="card-title fw-bold fs-4">
-                    {Val.title} &nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;
-                    {Val.price}
+                  <div
+                    className="card-title fw-bold fs-4"
+                    style={{ color: "#32de84" }}
+                  >
+                    {Val.title}
                   </div>
                   <div className="card-text">{Val.desc}</div>
+
+                  <div style={{ paddingTop: "10px" }}>
+                    <button
+                      onClick={() => window.open(Val.link)}
+                      style={{
+                        color: "white",
+                        backgroundColor: "#32de84",
+                        border: "#32de84",
+                        borderRadius: "10px",
+                      }}
+                    >
+                      {" "}
+                      view project
+                    </button>
+                  </div>
                 </div>
               </div>
             );

@@ -3,13 +3,15 @@ import "./section2.css";
 import { Button, Container, Row } from "react-bootstrap";
 import Portrait from "./vhickjr.png";
 export default function Section2() {
+  const handleClick = () => {
+    window.location.href = "mailto:victormathias001@gmail.com";
+  };
   return (
     <div className="sec2">
-      <Container
-        fluid
+      <div
         style={{
-          paddingLeft: "auto",
-          paddingRight: "auto",
+          paddingLeft: "1em",
+          paddingRight: "1em",
           paddingTop: "2.5em",
           paddingBottom: "2.5em",
 
@@ -29,7 +31,7 @@ export default function Section2() {
         </div>
 
         <div className="vizard2">
-          <Row
+          <div
             className="About"
             style={{
               maxWidth: "100%",
@@ -42,33 +44,57 @@ export default function Section2() {
             <div>
               <a
                 href="/Aboutme"
-                style={{ textDecoration: "none", color: "black" }}
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
               >
-                <h2 className="header">About Me</h2>
+                <h2 className="header">
+                  <button
+                    style={{
+                      borderRadius: "10px",
+                      backgroundColor: "#32de84",
+                      border: "#32de84",
+                    }}
+                  >
+                    About Me
+                  </button>
+                </h2>
               </a>
 
               <p className="content">
-                I am a creative product designer with 1 year experience, I offer
-                the most value to companies looking for design directions, I am
-                skilled at turning complicated information into creative and
-                easy-to-understand user interfaces, layouts, and visualizations.
-                Work collaboratively with project managers, software developers,
-                engineers,etc
+                I am a software developer with 2 years of experience,
+                specializing in front-end development. My skillset includes
+                full-stack and back-end development, and I am proficient in
+                several languages including HTML, CSS, JavaScript, Python, C and
+                C++. I am dedicated to creating visually stunning front-end
+                interfaces.
               </p>
 
               <div className="button-container">
-                <Button className="button Resume">
-                  <a href="https://universityoflagos-my.sharepoint.com/:b:/g/personal/190403081_live_unilag_edu_ng/Ef7_wIM_aIBCuYNDR1xw-aQByMc0k0ihS39HK71td9OKqg?e=WYnncG">
+                <div>
+                  <Button className="button Resume">
+                    <a
+                      style={{ color: "white" }}
+                      href="https://universityoflagos-my.sharepoint.com/:b:/g/personal/190403081_live_unilag_edu_ng/Ef7_wIM_aIBCuYNDR1xw-aQByMc0k0ihS39HK71td9OKqg?e=WYnncG"
+                    >
+                      {" "}
+                      View Resume
+                    </a>
+                  </Button>
+                </div>
+                <div>
+                  {" "}
+                  <Button className="button Hire">
                     {" "}
-                    View Resume
-                  </a>
-                </Button>
-                <Button className="button Hire">Hire Me</Button>
+                    <span onClick={handleClick}>Hire me</span>
+                  </Button>
+                </div>
               </div>
             </div>
-          </Row>
+          </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

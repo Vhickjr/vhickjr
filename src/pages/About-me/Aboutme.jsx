@@ -33,12 +33,11 @@ export default function Aboutme() {
             About me
           </h2>
           <p style={{}}>
-            I am a creative product designer with 1 year experience, I offer the
-            most value to companies looking for design directions, I am skilled
-            at turning complicated information into creative and
-            easy-to-understand user interfaces, layouts, and visualizations.
-            Work collaboratively with project managers, software developers,
-            engineers,etc
+            I am a software developer with 2 years of experience, specializing
+            in front-end development. My skillset includes full-stack and
+            back-end development, and I am proficient in several languages
+            including HTML, CSS, JavaScript, Python, C and C++. I am dedicated
+            to creating visually stunning front-end interfaces.
           </p>
         </div>
         <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import "./section6.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
@@ -40,12 +41,20 @@ const Section6 = () => {
           </div>
           <br></br>
           <br></br>
-          <div className="client--content">
-            <h2 className="client--quote"> They are good at what they do.</h2>
-            <br />
-            <br />
-            <h3 className="client--name"> Victoria</h3>
-          </div>
+          <a href="https://www.instagram.com/matty.jr24/">
+            <div className="client--content">
+              <h2 className="client--quote"> He made me a nice website</h2>
+              <br />
+              <br />
+              <h3 className="client--name">
+                {" "}
+                Samuel{" "}
+                <AiFillInstagram
+                  style={{ color: " #E1306C" }}
+                ></AiFillInstagram>
+              </h3>
+            </div>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -83,12 +92,20 @@ const Section6 = () => {
           </div>
           <br></br>
           <br></br>
-          <div className="client--content">
-            <h2 className="client--quote"> He did a geat job 😁.</h2>
-            <br />
-            <br />
-            <h3 className="client--name"> Loveth</h3>
-          </div>
+          <a href="https://www.instagram.com/lovethmathias/">
+            <div className="client--content">
+              <h2 className="client--quote"> He did a geat job 😁.</h2>
+              <br />
+              <br />
+              <h3 className="client--name">
+                {" "}
+                Loveth{" "}
+                <AiFillInstagram
+                  style={{ color: " #E1306C" }}
+                ></AiFillInstagram>
+              </h3>
+            </div>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -122,12 +139,21 @@ const Section6 = () => {
           </div>
           <br></br>
           <br></br>
-          <div className="client--content">
-            <h2 className="client--quote"> I'm impressed!😀 .</h2>
-            <br />
-            <br />
-            <h3 className="client--name"> Cisco</h3>
-          </div>
+          <a href="https://www.instagram.com/kidochukwu_kido/">
+            <div className="client--content">
+              <h2 className="client--quote"> I'm impressed!😀 .</h2>
+              <br />
+              <br />
+
+              <h3 className="client--name">
+                {" "}
+                Jane
+                <AiFillInstagram
+                  style={{ color: " #E1306C" }}
+                ></AiFillInstagram>
+              </h3>
+            </div>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

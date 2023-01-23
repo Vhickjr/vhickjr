@@ -4,7 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Section3() {
   return (
     <div className="sec3">
-      <h3 style={{ color: "white", textAlign: "center" }}>skills</h3>
+      <a href="./skills">
+        <h3 style={{ color: "white", textAlign: "center" }}>skills</h3>
+      </a>
       <h3 style={{ color: "white", textAlign: "start" }}>HTML</h3>
       <div class="progress">
         <div
