@@ -1,41 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
-import landing from "./images/landing.svg";
-import redesign from "./images/redesign.svg";
-import music from "./images/music.svg";
-import cypto from "./images/cypto.svg";
 import "./section5.css";
 
 const Section5 = () => {
   const data = [
     {
-      image: landing,
+      image: "https://i.ibb.co/17LQC5X/Screenshot-48.png",
       alt: "landing",
-      heading: "Website Landing Page Re-design",
-      appName: "OHEALTH",
+      heading: "My Portfolio website",
+      appName: "Reactjs",
+      link: "https://www.mathiasvictor.com/",
+      value: "VIEW PROJECT",
+      link: "https://www.mathiasvictor.com/",
     },
     {
-      image: redesign,
-      alt: "redesign",
-      heading: "Website Re-design",
-      appName: "KILIMANJARO MEDIA",
+      image: "https://i.ibb.co/1XNW7YP/Screenshot-49.png",
+      alt: "landing",
+      heading: "PeersApp landing page",
+      appName: "nextjs",
+      value: "VIEW PROJECT",
+      link: "https://peersapp-3aigy7llz-portfolio-frontend-react-team-2.vercel.app/",
     },
     {
-      image: music,
-      alt: "music",
-      heading: "Music App",
-      appName: "AFROBEAT UNDERGROUND",
+      image: "https://i.ibb.co/P6K4KTP/Screenshot-44.png",
+      alt: "landing",
+      heading: "Barter clone",
+      appName: "REACTJS",
+      value: "VIEW PROJECT",
+      link: "https://barter-clone.netlify.app/",
     },
     {
-      image: cypto,
-      alt: "crypto",
-      heading: "Crypto Wallet",
-      appName: "TECHNOLY",
+      image: "https://i.ibb.co/6ry4Lqn/Screenshot-46.png",
+      alt: "landing",
+      heading: "URL shortener",
+      appName: "REACTJS",
+      value: "VIEW PROJECT",
+      link: "https://bub-it.netlify.app/",
     },
   ];
+  const handleClick = (link) => {
+    window.location.href = link;
+  };
   return (
     <div className="port">
-      <h2 className="text-center py-5">My Portfolio</h2>
+      <a href="/myportfolio">
+        <button
+          style={{
+            borderRadius: "10px",
+            backgroundColor: "#32de84",
+            marginBottom: "50px",
+          }}
+        >
+          <h2>My Portfolio</h2>
+        </button>
+      </a>
       <div className="portfolio container ">
         <div className="row">
           {data.map((details) => (
@@ -45,7 +63,8 @@ const Section5 = () => {
                 alt={details.alt}
                 heading={details.heading}
                 appName={details.appName}
-                value="VIEW PROJECT"
+                value={details.value}
+                onClick={() => handleClick(details.link)}
               />
             </div>
           ))}

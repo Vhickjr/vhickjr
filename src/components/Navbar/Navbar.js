@@ -9,6 +9,9 @@ import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbarr() {
+  const handleClick = () => {
+    window.location.href = "mailto:victormathias001@gmail.com";
+  };
   return (
     <Navbar
       collapseOnSelect
@@ -40,7 +43,7 @@ function Navbarr() {
           <Nav>
             <Form className="d-flex">
               <Button variant="outline-light">
-                <a href="mailto:victormathias001@gmail.com"></a>Hire me
+                <span onClick={handleClick}>Hire me</span>
               </Button>
             </Form>
           </Nav>

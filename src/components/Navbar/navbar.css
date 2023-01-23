@@ -5,6 +5,10 @@
   margin-bottom: 0;
   list-style: none;
 }
+a:link {
+  text-decoration: none;
+  color: white;
+}
 
 .nav-link {
   display: block;

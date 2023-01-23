@@ -157,7 +157,7 @@
 
 @media only screen and (max-width: 450px) {
   .navv {
-    padding-right: 145px !important;
+    padding-right: 15px !important;
   }
 
   .maincontainer {
@@ -243,7 +243,7 @@
 
 @media only screen and (max-width: 1200px) {
   .navv {
-    height: 120px;
+    height: 15px;
     justify-content: space-between;
   }
 

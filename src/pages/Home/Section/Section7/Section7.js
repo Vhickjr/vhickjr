@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  FaPhoneAlt,
   FaInstagram,
   FaLinkedin,
   FaTwitterSquare,
@@ -48,16 +47,25 @@ const Section7 = () => {
           </li>
 
           <div className="icons">
-            <a href="https://www.linkedin.com/in/victor-mathias-585b71205">
+            <a
+              href="https://www.linkedin.com/in/victor-mathias-585b71205"
+              style={{ color: "#0077B5" }}
+            >
               <FaLinkedin className="icon" />
             </a>
-            <a href="https://www.instagram.com/vhickjr/">
+            <a
+              href="https://www.instagram.com/vhickjr/"
+              style={{ color: "#E1306C" }}
+            >
               <FaInstagram className="icon" />
             </a>
-            <a href="https://www.twitter.com/__therealvictor">
+            <a
+              href="https://www.twitter.com/__therealvictor"
+              style={{ color: "#1DA1F2" }}
+            >
               <FaTwitterSquare className="icon" />
             </a>
-            <a href="https://github.com/Vhickjr">
+            <a href="https://github.com/Vhickjr" style={{ color: "#6e5494" }}>
               <FaGithubSquare className="icon" />
             </a>
           </div>

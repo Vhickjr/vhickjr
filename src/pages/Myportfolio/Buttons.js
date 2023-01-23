@@ -30,20 +30,38 @@ const Buttons = ({ filterItem, setItem, menuItems }) => {
         </button>
 
         <button
-          className="btn-warning text-whites"
-          onClick={() => filterItem("Breakfast")}
+          style={{
+            color: "white",
+            backgroundColor: "#32de84",
+            border: "#32de84",
+            borderRadius: "10px",
+          }}
+          className=" text-whites"
+          onClick={() => filterItem("latest")}
         >
           latest
         </button>
         <button
-          className="btn-warning text-white"
-          onClick={() => filterItem("Lunch")}
+          className="text-white"
+          onClick={() => filterItem("cms")}
+          style={{
+            color: "white",
+            backgroundColor: "#32de84",
+            border: "#32de84",
+            borderRadius: "10px",
+          }}
         >
           cms
         </button>
         <button
-          className="btn-warning text-white"
-          onClick={() => filterItem("Dinner")}
+          className="text-white"
+          onClick={() => filterItem("scripting")}
+          style={{
+            color: "white",
+            backgroundColor: "#32de84",
+            border: "#32de84",
+            borderRadius: "10px",
+          }}
         >
           scripting
         </button>

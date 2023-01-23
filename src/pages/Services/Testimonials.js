@@ -35,7 +35,7 @@ const QuoteContainer = styled(AnimatedContainer)`
 const Container = styled.section`
   height: 100%;
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-  background: grey;
+  background: #38004c;
 `;
 
 const Blockquote = styled.blockquote`
@@ -60,18 +60,18 @@ class Testimonials extends React.Component {
     quotes: [
       {
         message:
-          ' "Lorem ipsum dolor sit amet, id eam munere recteque, per at ridens dictas. Te graecis scripserit cotidieque sed, vel labore praesent maluisset eu, mel nostrud intellegebat at. Ad mel epicurei voluptaria interesset, natum persius voluptatibus et nec, pri ubique animal dignissim et. Quodsi accusam sea cu. Prima probatus mnesarchum has ne."',
-        client: "Person1",
+          ' "I highly recommend Victor for your website development needs. He exceeded my expectations, delivered on time and created a beautiful and functional website using HTML, CSS and JavaScript."',
+        client: "Joshua",
       },
       {
         message:
-          '"Ei vim modo albucius voluptaria, an civibus oporteat sit, iriure animal te nam. Cu est esse inciderint. Nam eu regione philosophia definitiones, sonet noluisse cu pri. An aliquid mnesarchum sadipscing sed, vis oratio postulant ad. Everti propriae indoctum no qui."',
-        client: "Person2",
+          '"Victor exceeded my expectations and delivered a high-performance, visually stunning Next.js website. He is extremely knowledgeable and detail-oriented. I highly recommend him."',
+        client: "Tobi",
       },
       {
         message:
-          '"No vim reque probatus. Et wisi suscipit luptatum has. Ut duo facete docendi commune. Tale animal complectitur pro et, an natum idque vel."',
-        client: "Person3",
+          '"I was impressed by Victor is ability to deliver a visually appealing and user-friendly React website. His technical and design skills are exceptional. I recommend him for any React project."',
+        client: "Tomi",
       },
     ],
     currentIndex: 0,
@@ -107,7 +107,7 @@ class Testimonials extends React.Component {
       <Container>
         <AiOutlineLeft
           style={{
-            color: "red",
+            color: "#046d33",
             zIndex: 10,
             position: "relative",
             left: "-24%",
@@ -126,7 +126,7 @@ class Testimonials extends React.Component {
 
         <AiOutlineRight
           style={{
-            color: "red",
+            color: "#046d33",
             zIndex: 1,
             position: "relative",
             right: "-24%",

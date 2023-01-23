@@ -9,6 +9,7 @@ a:hover {
 .port1 {
   width: 100%;
   display: flex;
+  margin-bottom: 50px;
   height: auto;
   justify-content: center;
   flex-wrap: wrap;
@@ -21,9 +22,9 @@ a:hover {
   margin-top: 40px;
 }
 .port3 {
-  height: 300px;
+  display: block;
   width: 40%;
-  padding-left: 1%;
+  padding: 20px;
   margin: 200px 1% 1% -40px;
   z-index: 3;
   opacity: 1;
@@ -94,9 +95,9 @@ a:hover {
     margin-top: 180px;
   }
   .port3 {
-    height: 276px;
+    display: block;
+
     width: 40%;
-    padding-left: 1%;
     margin: 130px 1% 1% -40px;
     z-index: 3;
     opacity: 1;
@@ -118,9 +119,9 @@ a:hover {
     margin-top: 40px;
   }
   .port3 {
-    height: 200px;
+    display: block;
     width: 100%;
-    padding-left: 1%;
+
     margin-right: 40px;
     margin-left: 40px;
     margin-top: 10px;
@@ -143,9 +144,9 @@ a:hover {
     margin-top: 40px;
   }
   .port3 {
-    height: 200px;
+    display: block;
     width: 100%;
-    padding-left: 1%;
+
     margin-right: 40px;
     margin-left: 40px;
     margin-top: 10px;

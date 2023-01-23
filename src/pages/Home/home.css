@@ -1,3 +1,87 @@
+#light {
+  background-color: #38004c;
+}
+
+#dark {
+  background-color: black;
+}
+
+#light .main {
+  background-color: #fff;
+}
+#light .contain {
+  background-color: #38004c;
+}
+
+#dark .contain {
+  background-color: black;
+}
+
+#light .contact-me {
+  background-color: #38004c;
+}
+
+#dark .contact-me {
+  background-color: black;
+}
+#light .port {
+  background-color: #38004c;
+}
+
+#dark .port {
+  background-color: black;
+}
+#light .portfolio > .row {
+  background-color: #38004c;
+}
+
+#dark .portfolio > .row {
+  background-color: black;
+}
+#light .sec3 {
+  background-color: #38004c;
+}
+#dark .sec3 {
+  background-color: black;
+}
+
+#light .username,
+#light .password {
+  color: rgb(38, 50, 56);
+  background: rgba(136, 126, 126, 0.04);
+}
+
+#dark .username,
+#dark .password {
+  color: rgb(254, 255, 255);
+  background: rgba(255, 247, 247, 0.299);
+}
+
+.username:focus,
+.password:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.switch {
+  width: 100vw;
+  left: 50%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.switch label {
+  margin: 10px;
+}*/
+
+#light .switch label {
+  color: black;
+}
+
+#dark .switch label {
+  color: white;
+}
+
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
@@ -7,6 +91,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 /*I used grid to help me with auto height resizing*/
+
 .customcontainer {
   overflow: hidden;
   font-weight: 800;

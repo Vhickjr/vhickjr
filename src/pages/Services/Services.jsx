@@ -19,32 +19,34 @@ const Services = () => {
         {" "}
         <Banner></Banner>
       </div>
-      <h1 style={{ marginTop: "100px" }}>My Services</h1>
+      <h1 style={{ marginTop: "100px", color: "#046d33" }}>My Services</h1>
       <div className="services-content-wrapper ">
         <div className="myservices">
           <VscDebugAll id="myservices"></VscDebugAll>
           <h1 style={{ color: "white", padding: "10px" }}>Debugging</h1>
           <p style={{ color: "white", padding: "10px" }}>
-            Debugging is the process of detecting and removing of existing and
-            potential errors (bugs) in a software code that can cause it to
-            behave unexpectedly or crash.
+            The task of debugging involves identifying and eliminating errors,
+            both present and potential, in the software code that may cause it
+            to malfunction or crash.
           </p>
         </div>
         <div className="myservices">
           <FcEngineering id="myservices"></FcEngineering>
           <h1 style={{ color: "white", padding: "10px" }}>API development</h1>
           <p style={{ color: "white", padding: "10px" }}>
-            API (Application Programming Interface software) is a set of
-            instructions, standards or requirements that enables a software or
-            app to employ features/services of another app
+            An API, or Application Programming Interface, is a set of
+            guidelines, protocols, or specifications that allows a program or
+            application to access and utilize the functionalities and resources
+            of another program or application
           </p>
         </div>
         <div className="myservices">
           <GrDeploy id="myservices"></GrDeploy>
           <h1 style={{ color: "white", padding: "10px" }}>Deployment</h1>
           <p style={{ color: "white", padding: "10px" }}>
-            Deploying projects/sites and apps to live servers using tools like
-            Docker, AWS, Heroku, Netlify, Vercel, Google Play Console
+            Deploying projects, websites, and applications on live servers using
+            various tools such as AWS, Heroku, Netlify, Vercel, or Google Play
+            Console.
           </p>
         </div>
       </div>
@@ -56,7 +58,6 @@ const Services = () => {
             <h5>
               <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}HTML
             </h5>
-            <p>experienced</p>
           </div>
           <div id="frontend2">
             <h5>
@@ -97,35 +98,37 @@ const Services = () => {
           <h4 id="frontend1">Backend Development</h4>
           <div id="frontend2">
             <h5>
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}HTML
+              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
+              NodeJS (Express)
             </h5>
-            <p>experienced</p>
           </div>
           <div id="frontend2">
             <h5>
               {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}CSS
+              <GoVerified></GoVerified>
+              {/* for spacing*/}
+              python(Django)
             </h5>
           </div>
           <div id="frontend3">
             <h5>
               {" "}
               <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              javaScript
+              MongoDB
             </h5>
           </div>
           <div id="frontend3">
             <h5>
               {" "}
               <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              ReactJS
+              MySQL
             </h5>
           </div>
           <div id="frontend4">
             <h5>
               {" "}
               <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              NextJS
+              Vercel
             </h5>
           </div>
           <div id="frontend4">
