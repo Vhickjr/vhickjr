@@ -48,7 +48,8 @@ const Section5 = () => {
           style={{
             borderRadius: "10px",
             backgroundColor: "#32de84",
-            marginBottom: "50px",
+            marginTop: "25px",
+            marginBottom: "25px",
           }}
         >
           <h2>My Portfolio</h2>
