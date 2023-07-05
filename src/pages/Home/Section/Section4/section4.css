@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   background-color: white;
   justify-content: center;
+  padding-bottom: 70px;
 }
 h3 {
   color: black;
@@ -43,7 +44,7 @@ h3 {
 .services-section {
   height: auto;
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+  font-family: "open sans", sans-serif;
   color: black;
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +90,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "open sans", sans-serif;
   color: var(--primary-color);
   letter-spacing: 0;
   margin-top: 1px;
@@ -101,7 +102,7 @@ h3 {
   color: var(--primary-color);
   font-weight: 400;
   font-style: normal;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "open sans", sans-serif;
   margin-top: 5px;
   padding-bottom: 50px;
   padding-left: 45px;

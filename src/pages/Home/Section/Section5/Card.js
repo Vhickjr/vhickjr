@@ -13,7 +13,7 @@ const Card = ({ image, alt, heading, appName, value, onClick }) => {
         <button
           style={{
             borderRadius: "10px",
-            backgroundColor: "#32de84",
+            backgroundColor: "#9b59b6",
             border: "#32de84",
           }}
           onClick={onClick}

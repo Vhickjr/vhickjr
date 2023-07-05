@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
