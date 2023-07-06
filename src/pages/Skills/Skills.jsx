@@ -115,7 +115,7 @@ export default function Skills() {
       <br></br>
       <h1 style={{ color: "white" }}>Certifications</h1>
       <div>
-        {/*<div className="portt1">
+        <div className="portt1">
           <div className="portt2">
             <img
               src={
@@ -143,7 +143,7 @@ export default function Skills() {
               <a>in progress</a>
             </button>
           </div>
-            </div>*/}
+        </div>
         <div className="portt1">
           <div className="portt2">
             <img

@@ -39,10 +39,10 @@ export default function Home() {
               onChange={toggleTheme}
               checked={theme === "dark"}
               handleDiameter={28}
-              offColor="#FFFFFF"
+              offColor="#32de84"
               onColor="#ffff"
-              offHandleColor="#FFFFFF"
-              onHandleColor="#FFFFFF"
+              offHandleColor="#FFA500"
+              onHandleColor="#FFA500"
               height={40}
               width={70}
               borderRadius={6}
@@ -119,8 +119,8 @@ export default function Home() {
           <h3
             style={{
               color: "black",
-              paddingTop: "50px",
-              fontFamily: "open sans",
+              paddingTop: "80px",
+              fontFamily: "Times New Roman",
             }}
           >
             <a href="/services">

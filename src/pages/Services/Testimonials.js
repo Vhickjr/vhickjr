@@ -35,7 +35,7 @@ const QuoteContainer = styled(AnimatedContainer)`
 const Container = styled.section`
   height: 100%;
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-  background: #ffffff;
+  background: #38004c;
 `;
 
 const Blockquote = styled.blockquote`

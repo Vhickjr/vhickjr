@@ -5,7 +5,7 @@ import { FaGlobe } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaMicroblog } from "react-icons/fa";
 import { FaSearchengin } from "react-icons/fa";
-import { Animation } from "react-animate-style";
+
 export default function Section4() {
   return (
     <div className="customcontain0">
@@ -14,10 +14,8 @@ export default function Section4() {
           <div className="component--icon">
             <FaLaptop />
           </div>
-          <Animation animationIn="bounceIn" animationOut="bounceOut">
-            <div>My animated content</div>
-          </Animation>
-          ;<h3 className="component--title"> Responsive Design</h3>
+
+          <h3 className="component--title"> Responsive Design</h3>
           <p className="component--text">
             Beautiful, stunning and unique responsive designs that are very user
             friendly to provide an awesome experience for all users.{" "}
@@ -50,7 +48,7 @@ export default function Section4() {
           </div>
         </div>
       </div>
-      {/* <div className="customcontain1">
+      <div className="customcontain1">
         <div className=" component--cards">
           <div className="component--icon">
             <FaMicroblog />
@@ -78,7 +76,7 @@ export default function Section4() {
             </p>
           </div>
         </div>
-  </div>*/}
+      </div>
     </div>
   );
 }

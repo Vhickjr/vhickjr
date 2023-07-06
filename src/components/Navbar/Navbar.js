@@ -19,6 +19,7 @@ function Navbarr() {
       variant="dark"
       expand="lg"
       style={{
+        fontFamily: "Times New Roman",
         paddingLeft: "30px",
         paddingRight: "20px",
       }}

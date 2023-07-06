@@ -1,7 +1,7 @@
 import React from "react";
 import "./section2.css";
 import { Button, Container, Row } from "react-bootstrap";
-import Portrait from "./vhickjr.PNG";
+import Portrait from "./vhickjr.png";
 export default function Section2() {
   const handleClick = () => {
     window.location.href = "mailto:victormathias001@gmail.com";
@@ -23,7 +23,11 @@ export default function Section2() {
         }}
       >
         <div className="vizard1">
-          <img src={Portrait} alt="My Portrait" />
+          <img
+            src={Portrait}
+            alt="My Portrait"
+            style={{ width: "100%", height: "100%" }}
+          />
         </div>
 
         <div className="vizard2">
@@ -72,7 +76,7 @@ export default function Section2() {
                   <Button className="button Resume">
                     <a
                       style={{ color: "white" }}
-                      href="https://docs.google.com/document/d/1LSzUCRVStYwlqMvS5vGaQOHmtdujmR1I/edit?usp=sharing&ouid=111082994503445633514&rtpof=true&sd=true"
+                      href="https://universityoflagos-my.sharepoint.com/:b:/g/personal/190403081_live_unilag_edu_ng/Ef7_wIM_aIBCuYNDR1xw-aQByMc0k0ihS39HK71td9OKqg?e=WYnncG"
                     >
                       {" "}
                       View Resume
