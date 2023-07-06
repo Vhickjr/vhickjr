@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./myportfolio.css";
-import Screenshot from "./Screenshot.png";
+//import Screenshot from "./Screenshot.png";
 import Banner from "../../components/banner/Banner";
 import Data from "./data";
 import Card from "./card";

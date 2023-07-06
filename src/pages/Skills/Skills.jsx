@@ -1,6 +1,6 @@
 import React from "react";
 import "./skills.css";
-import Screenshot from "./Screenshot.png";
+//import Screenshot from "./Screenshot.png";
 import Banner from "../../components/banner/Banner";
 
 export default function Skills() {

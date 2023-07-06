@@ -95,7 +95,10 @@ const Section6 = () => {
           <br></br>
           <a href="https://www.instagram.com/lovethmathias/">
             <div className="client--content">
-              <h2 className="client--quote"> He did a geat job 😁.</h2>
+              <h2 className="client--quote">
+                {" "}
+                He did a geat job <span>😁.</span>
+              </h2>
               <br />
               <br />
               <h3 className="client--name">
@@ -142,7 +145,10 @@ const Section6 = () => {
           <br></br>
           <a href="https://www.instagram.com/kidochukwu_kido/">
             <div className="client--content">
-              <h2 className="client--quote"> I'm impressed!😀 .</h2>
+              <h2 className="client--quote">
+                {" "}
+                I'm impressed! <span>😀 .</span>
+              </h2>
               <br />
               <br />
 
