@@ -3,8 +3,8 @@ import "./section4.css";
 import { FaLaptop } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaMicroblog } from "react-icons/fa";
-import { FaSearchengin } from "react-icons/fa";
+//import { FaMicroblog } from "react-icons/fa";
+//import { FaSearchengin } from "react-icons/fa";
 import { Animation } from "react-animate-style";
 export default function Section4() {
   return (

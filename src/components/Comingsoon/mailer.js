@@ -21,9 +21,11 @@ const Mailer = () => {
       .catch((err) => console.log(err));
   }
   const [popup, setPop] = useState(false);
-  const handleClickOpen = () => {
+  {
+    /*const handleClickOpen = () => {
     setPop(!popup);
-  };
+  };*/
+  }
   const closePopup = () => {
     setPop(false);
   };
@@ -49,7 +51,7 @@ const Mailer = () => {
           <label className="vic4">Message</label>
           <textarea name="message" rows="4" className="form-control"></textarea>
 
-          <a onClick={handleClickOpen}>
+          <a href="handleClickOpen">
             <input
               type="submit"
               value="send"

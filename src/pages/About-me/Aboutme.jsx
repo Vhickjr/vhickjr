@@ -3,7 +3,7 @@ import "./aboutme.css";
 import Banner from "../../components/banner/Banner";
 import Myportrait from "./vhickjr2.png";
 import {
-  FaArrowCircleLeft,
+  //FaArrowCircleLeft,
   FaArrowCircleRight,
   FaSchool,
   FaChartLine,
