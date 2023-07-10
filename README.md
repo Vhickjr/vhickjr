@@ -11,5 +11,3 @@ Skills: REACT / JS / HTML / CSS/C++
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=vhickjr&show_icons=true)  
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=vhickjr)  
-
