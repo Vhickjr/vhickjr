@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="AI2aZh30aVuGz05E-BZ0ob3RVR_jG3WiOmfhptqzhGU" />
-    <title>GitHub README</title>
-    <style>
-        /* Add your custom CSS styles here */
-    </style>
+
 </head>
 <body>
 <h1>Hi there 👋, my name is Mathias</h1>
