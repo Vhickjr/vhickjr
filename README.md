@@ -1,4 +1,16 @@
-### Hi there 👋, my name is Mathias
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="AI2aZh30aVuGz05E-BZ0ob3RVR_jG3WiOmfhptqzhGU" />
+    <title>GitHub README</title>
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+<h1>Hi there 👋, my name is Mathias</h1>
 I Am A Software Developer With 2 Years Of Experience, Specializing In Front-end Development. My Skillset Includes Full-stack And Back-end Development, And I Am Proficient In Several Languages Including Html, CSS, Javascript, Python, C, And C++. I Am Dedicated To Creating Visually Stunning Front-end Interfaces.
 
 Skills: REACT / JS / HTML / CSS/C++
@@ -10,5 +22,5 @@ Skills: REACT / JS / HTML / CSS/C++
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vhickjr)](https://github.com/anuraghazra/github-readme-stats)
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=vhickjr&show_icons=true)  
-
-  <meta name="google-site-verification" content="AI2aZh30aVuGz05E-BZ0ob3RVR_jG3WiOmfhptqzhGU" />
+</body>
+</html>
