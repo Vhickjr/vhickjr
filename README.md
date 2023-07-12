@@ -1,5 +1,3 @@
-
-  <meta name="google-site-verification" content="AI2aZh30aVuGz05E-BZ0ob3RVR_jG3WiOmfhptqzhGU" />
 ### Hi there 👋, my name is Mathias
 I Am A Software Developer With 2 Years Of Experience, Specializing In Front-end Development. My Skillset Includes Full-stack And Back-end Development, And I Am Proficient In Several Languages Including Html, CSS, Javascript, Python, C, And C++. I Am Dedicated To Creating Visually Stunning Front-end Interfaces.
 
@@ -13,3 +11,4 @@ Skills: REACT / JS / HTML / CSS/C++
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=vhickjr&show_icons=true)  
 
+  <meta name="google-site-verification" content="AI2aZh30aVuGz05E-BZ0ob3RVR_jG3WiOmfhptqzhGU" />
