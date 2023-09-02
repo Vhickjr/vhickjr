@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 import "./section5.css";
 
@@ -11,7 +11,7 @@ const Section5 = () => {
       appName: "Reactjs",
       link: "https://www.mathiasvictor.com/",
       value: "VIEW PROJECT",
-      link: "https://www.mathiasvictor.com/",
+      link1: "https://www.mathiasvictor.com/",
     },
     {
       image: "https://i.ibb.co/1XNW7YP/Screenshot-49.png",
@@ -19,7 +19,8 @@ const Section5 = () => {
       heading: "PeersApp landing page",
       appName: "nextjs",
       value: "VIEW PROJECT",
-      link: "https://peersapp-3aigy7llz-portfolio-frontend-react-team-2.vercel.app/",
+      link:
+        "https://peersapp-3aigy7llz-portfolio-frontend-react-team-2.vercel.app/",
     },
     {
       image: "https://i.ibb.co/P6K4KTP/Screenshot-44.png",

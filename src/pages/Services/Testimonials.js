@@ -1,19 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import posed, { PoseGroup } from "react-pose";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-const AnimatedContainer = posed.div({
-  enter: {
-    opacity: 1,
-    delay: 200,
-  },
-  exit: {
-    opacity: 0,
-  },
-});
-
-const QuoteContainer = styled(AnimatedContainer)`
+const QuoteContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   background: #010101;
@@ -117,12 +106,12 @@ class Testimonials extends React.Component {
         >
           {"<"}
         </AiOutlineLeft>
-        <PoseGroup>
+        <div>
           <QuoteContainer key={currentQuote.client}>
             <Blockquote>{currentQuote.message}</Blockquote>
             <Cite>{currentQuote.client}</Cite>
           </QuoteContainer>
-        </PoseGroup>
+        </div>
 
         <AiOutlineRight
           style={{

@@ -1,6 +1,6 @@
 import React from "react";
 import LOGO from "./Assets/logo.png";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 //import { BsPlayFill } from "react-icons/bs";
 //import { BiBarChart } from "react-icons/bi";
@@ -136,13 +136,9 @@ const Banner = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
 
-  const [show, setShow] = useState(false);
-
-  {
-    /*const showNav = () => {
+  /*const showNav = () => {
    setShow(!show);
   };*/
-  }
 
   return (
     <BannerStyle id="home">

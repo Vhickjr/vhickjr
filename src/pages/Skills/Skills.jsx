@@ -171,7 +171,7 @@ export default function Skills() {
                 border: "2px solid #32de84 ",
               }}
             >
-              <a>in progress</a>
+              in progress
             </button>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function Skills() {
                 border: "2px solid #32de84 ",
               }}
             >
-              <a>in progress</a>
+              in progress
             </button>
           </div>
         </div>
@@ -233,7 +233,7 @@ export default function Skills() {
                 border: "2px solid #32de84 ",
               }}
             >
-              <a>in progress</a>
+              in progress
             </button>
           </div>
         </div>

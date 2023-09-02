@@ -1,7 +1,7 @@
 import React from "react";
 import "./section2.css";
 import { Button } from "react-bootstrap";
-import Portrait from "./vhickjr.PNG";
+import Portrait from "./vhickjr.png";
 export default function Section2() {
   const handleClick = () => {
     window.location.href = "mailto:victormathias001@gmail.com";

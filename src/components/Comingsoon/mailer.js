@@ -21,11 +21,11 @@ const Mailer = () => {
       .catch((err) => console.log(err));
   }
   const [popup, setPop] = useState(false);
-  {
-    /*const handleClickOpen = () => {
+
+  /*const handleClickOpen = () => {
     setPop(!popup);
   };*/
-  }
+
   const closePopup = () => {
     setPop(false);
   };

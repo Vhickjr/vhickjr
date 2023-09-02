@@ -54,6 +54,7 @@ export default class Contactme extends Component {
             <div className="earth3dmap-com">
               <iframe
                 id="iframemap"
+                title="Description of Embedded Content"
                 src="https://maps.google.com/maps?q=4+Adelabu+lane+off+Olateju%2C+Mushin%2C+Lagos%2C+Nigeria.&ie=UTF8&iwloc=&output=embed"
                 style={{ width: "100%", height: "400px" }}
               />
@@ -77,6 +78,7 @@ export default class Contactme extends Component {
                   }}
                   href="http://earth3dmap.com/?from=embed"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Earth3DMap.com
                 </a>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import ReactSwitch from "react-switch";
 import "./home.css";
 import "../Home/Section/Section1/section1.css";
@@ -24,9 +24,9 @@ export default function Home() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div class="customcontainer">
-        <a id="Top">
+        <span id="Top">
           <Navbar></Navbar>
-        </a>
+        </span>
 
         <main id={theme}>
           <Section1></Section1>

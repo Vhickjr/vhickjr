@@ -97,7 +97,10 @@ const Section6 = () => {
             <div className="client--content">
               <h2 className="client--quote">
                 {" "}
-                He did a geat job <span>😁.</span>
+                He did a geat job{" "}
+                <span role="img" aria-label="Smiling face emoji">
+                  😁
+                </span>
               </h2>
               <br />
               <br />
@@ -147,7 +150,10 @@ const Section6 = () => {
             <div className="client--content">
               <h2 className="client--quote">
                 {" "}
-                I'm impressed! <span>😀 .</span>
+                I'm impressed!{" "}
+                <span role="img" aria-label="Smiling face emoji">
+                  😀 .
+                </span>
               </h2>
               <br />
               <br />

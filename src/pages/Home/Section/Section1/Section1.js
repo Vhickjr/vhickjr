@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useEffect, createContext } from "react";
 import "./section1.css";
 import "font-awesome/css/font-awesome.min.css";
 
