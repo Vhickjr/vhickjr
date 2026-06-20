@@ -1,0 +1,82 @@
+.svc-testimonials {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.svc-tcard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.svc-tcard__icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.svc-tcard__text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+
+.svc-tcard__author {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.svc-testimonials__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.svc-testimonials__nav > button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.svc-testimonials__nav > button:hover {
+  border-color: var(--border-accent);
+  color: var(--accent);
+}
+
+.svc-testimonials__dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.svc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.svc-dot--active {
+  background: var(--accent);
+  width: 22px;
+  border-radius: 4px;
+}

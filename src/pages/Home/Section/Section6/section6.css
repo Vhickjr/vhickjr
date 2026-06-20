@@ -1,61 +1,106 @@
-.sec6 {
-  display: flex;
-
-  height: 300px;
-  left: 0px;
-  background-color: gold;
-  justify-content: center;
+.testimonials-section {
+  background: var(--bg-card);
+  padding: 5rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
-.testimonials {
-  font-family: "open sans", sans-serif;
-  align-items: center;
+
+.testimonials-section .section-title {
+  margin-bottom: 3rem;
+}
+
+.testimonials-track {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto 2rem;
+  min-height: 240px;
+}
+
+.tcard {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 420px;
-  padding: 2px 0;
-}
-.title {
-  letter-spacing: 0;
-  line-height: 64px;
-  font-size: 32px;
-  font-weight: 800;
-  font-style: normal;
-  color: #070707;
+  align-items: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  opacity: 0;
+  transform: translateY(12px) scale(0.97);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
 }
 
-.quote--marks {
-  font-size: 42px;
-  height: 42px;
+.tcard--active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+  position: relative;
 }
 
-.star--ratings {
-  height: 33px;
-  margin-top: 15px;
-  font-size: 28px;
-  height: 33px;
+.tcard__quote-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
-.client--content {
-  gap: 10px;
-  padding: 10px 0;
+.tcard__stars {
+  display: flex;
+  gap: 0.25rem;
+  color: #fbbf24;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
 }
-.client--quote,
-.client--name {
-  color: #070707;
-  font-size: 32px;
-  line-height: 44px;
+
+.tcard__text {
+  font-size: 1.15rem;
+  color: var(--text);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
 }
-.secc6 {
-  height: 420px;
+
+.tcard__author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity var(--transition);
 }
-@media only screen and (max-width: 425px) {
-  /*Small smartphones [325px -> 425px]*/
-  .secc6 {
-    height: 500px;
-  }
-  .testimonials {
-    height: 500px;
-    padding: 10px;
-  }
+
+.tcard__author svg {
+  color: #e1306c;
+  font-size: 1.1rem;
+}
+
+.tcard__author:hover {
+  opacity: 0.8;
+}
+
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tdot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.tdot--active {
+  background: var(--accent);
+  width: 24px;
+  border-radius: 4px;
 }

@@ -1,133 +1,64 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState, useEffect } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { FaQuoteLeft } from "react-icons/fa";
+import "./testimonials.css";
 
-const QuoteContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  background: #010101;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 220px;
-  border-radius: 20px;
-  @media (max-width: 768px) {
-    width: 90%;
-    height: 350px;
-  }
-  @media (max-width: 425px) {
-    width: 90%;
-    height: 350px;
-  }
-`;
+const quotes = [
+  {
+    message:
+      "I highly recommend Victor for your website development needs. He exceeded my expectations, delivered on time and created a beautiful and functional website using HTML, CSS and JavaScript.",
+    client: "Joshua",
+  },
+  {
+    message:
+      "Victor exceeded my expectations and delivered a high-performance, visually stunning Next.js website. He is extremely knowledgeable and detail-oriented. I highly recommend him.",
+    client: "Tobi",
+  },
+  {
+    message:
+      "I was impressed by Victor's ability to deliver a visually appealing and user-friendly React website. His technical and design skills are exceptional. I recommend him for any React project.",
+    client: "Tomi",
+  },
+];
 
-const Container = styled.section`
-  height: 100%;
-  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-  background: #ffffff;
-`;
+export default function Testimonials() {
+  const [idx, setIdx] = useState(0);
 
-const Blockquote = styled.blockquote`
-  line-height: 20px;
-  font-style: italic;
-  font-size: 18px;
-  font-weight: 100;
-  padding: 1.5em;
-`;
-
-const Cite = styled.cite`
-  color: white;
-  align-self: center;
-  font-style: normal;
-  margin-top: -20px;
-  margin-right: auto;
-  margin-left: auto;
-`;
-
-class Testimonials extends React.Component {
-  state = {
-    quotes: [
-      {
-        message:
-          ' "I highly recommend Victor for your website development needs. He exceeded my expectations, delivered on time and created a beautiful and functional website using HTML, CSS and JavaScript."',
-        client: "Joshua",
-      },
-      {
-        message:
-          '"Victor exceeded my expectations and delivered a high-performance, visually stunning Next.js website. He is extremely knowledgeable and detail-oriented. I highly recommend him."',
-        client: "Tobi",
-      },
-      {
-        message:
-          '"I was impressed by Victor is ability to deliver a visually appealing and user-friendly React website. His technical and design skills are exceptional. I recommend him for any React project."',
-        client: "Tomi",
-      },
-    ],
-    currentIndex: 0,
-  };
-
-  previousQuote = () =>
-    this.setState((prevState) => ({
-      currentIndex: (prevState.currentIndex + 1) % prevState.quotes.length,
-    }));
-
-  nextQuote = () =>
-    this.setState((prevState) => ({
-      currentIndex:
-        (prevState.currentIndex - 1 + prevState.quotes.length) %
-        prevState.quotes.length,
-    }));
-
-  componentDidMount() {
-    this.interval = setInterval(() => {
-      this.nextQuote();
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIdx((prev) => (prev + 1) % quotes.length);
     }, 8000);
-  }
+    return () => clearInterval(timer);
+  }, []);
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+  const prev = () => setIdx((idx - 1 + quotes.length) % quotes.length);
+  const next = () => setIdx((idx + 1) % quotes.length);
 
-  render() {
-    const { quotes, currentIndex } = this.state;
-    const currentQuote = quotes[currentIndex];
-
-    return (
-      <Container>
-        <AiOutlineLeft
-          style={{
-            color: "#046d33",
-            zIndex: 10,
-            position: "relative",
-            left: "-24%",
-            top: "25%",
-          }}
-          onClick={this.previousQuote}
-        >
-          {"<"}
-        </AiOutlineLeft>
-        <div>
-          <QuoteContainer key={currentQuote.client}>
-            <Blockquote>{currentQuote.message}</Blockquote>
-            <Cite>{currentQuote.client}</Cite>
-          </QuoteContainer>
+  return (
+    <div className="svc-testimonials">
+      <div className="svc-tcard">
+        <FaQuoteLeft className="svc-tcard__icon" />
+        <p className="svc-tcard__text">{quotes[idx].message}</p>
+        <span className="svc-tcard__author">— {quotes[idx].client}</span>
+      </div>
+      <div className="svc-testimonials__nav">
+        <button onClick={prev} aria-label="Previous">
+          <AiOutlineLeft />
+        </button>
+        <div className="svc-testimonials__dots">
+          {quotes.map((_, i) => (
+            <button
+              key={i}
+              className={`svc-dot${i === idx ? " svc-dot--active" : ""}`}
+              onClick={() => setIdx(i)}
+              aria-label={`Testimonial ${i + 1}`}
+            />
+          ))}
         </div>
-
-        <AiOutlineRight
-          style={{
-            color: "#046d33",
-            zIndex: 1,
-            position: "relative",
-            right: "-24%",
-            bottom: "26%",
-          }}
-          onClick={this.nextQuote}
-        >
-          {"<"}
-        </AiOutlineRight>
-      </Container>
-    );
-  }
+        <button onClick={next} aria-label="Next">
+          <AiOutlineRight />
+        </button>
+      </div>
+    </div>
+  );
 }
-
-export default Testimonials;

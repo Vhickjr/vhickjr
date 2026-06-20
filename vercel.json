@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "command": "npm install --legacy-peer-deps && npm run build"
-  },
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "build",
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/[^.]+", "dest": "/", "status": 200 }
   ]
 }

@@ -1,175 +1,77 @@
-import React from "react";
-import "animate.css";
-import { FaQuoteLeft } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import "./section6.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Carousel from "react-bootstrap/Carousel";
-import Portrait from "./carousel1.jpg";
+
+const testimonials = [
+  {
+    quote: "He made me a nice website",
+    name: "Samuel",
+    link: "https://www.instagram.com/matty.jr24/",
+  },
+  {
+    quote: "He did a great job 😁",
+    name: "Loveth",
+    link: "https://www.instagram.com/lovethmathias/",
+  },
+  {
+    quote: "I'm impressed! 😀",
+    name: "Jane",
+    link: "https://www.instagram.com/kidochukwu_kido/",
+  },
+];
 
 const Section6 = () => {
-  return (
-    <Carousel fade variant="dark" className="testimonials">
-      <Carousel.Item>
-        <img className="d-block w-100 secc6" src={Portrait} alt="First slide" />
-        <Carousel.Caption>
-          <h1 style={{ color: "black" }}>Testimonials</h1>
-          <div className="quote--marks">
-            <FaQuoteLeft />
-          </div>
-          <div className="star--ratings">
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-          </div>
-          <br></br>
-          <br></br>
-          <a href="https://www.instagram.com/matty.jr24/">
-            <div className="client--content">
-              <h2 className="client--quote"> He made me a nice website</h2>
-              <br />
-              <br />
-              <h3 className="client--name">
-                {" "}
-                Samuel{" "}
-                <AiFillInstagram
-                  style={{ color: " #E1306C" }}
-                ></AiFillInstagram>
-              </h3>
-            </div>
-          </a>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 secc6"
-          src={Portrait}
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h1 style={{ color: "black" }}>Testimonials</h1>
-          <div className="quote--marks">
-            <FaQuoteLeft />
-          </div>
-          <div className="star--ratings">
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-          </div>
-          <br></br>
-          <br></br>
-          <a href="https://www.instagram.com/lovethmathias/">
-            <div className="client--content">
-              <h2 className="client--quote">
-                {" "}
-                He did a geat job{" "}
-                <span role="img" aria-label="Smiling face emoji">
-                  😁
-                </span>
-              </h2>
-              <br />
-              <br />
-              <h3 className="client--name">
-                {" "}
-                Loveth{" "}
-                <AiFillInstagram
-                  style={{ color: " #E1306C" }}
-                ></AiFillInstagram>
-              </h3>
-            </div>
-          </a>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100 secc6" src={Portrait} alt="Third slide" />
-        <Carousel.Caption>
-          <h1 style={{ color: "black" }}>Testimonials</h1>
-          <div className="quote--marks">
-            <FaQuoteLeft />
-          </div>
-          <div className="star--ratings">
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-            <span>
-              {" "}
-              <FaStar />{" "}
-            </span>
-          </div>
-          <br></br>
-          <br></br>
-          <a href="https://www.instagram.com/kidochukwu_kido/">
-            <div className="client--content">
-              <h2 className="client--quote">
-                {" "}
-                I'm impressed!{" "}
-                <span role="img" aria-label="Smiling face emoji">
-                  😀 .
-                </span>
-              </h2>
-              <br />
-              <br />
+  const [active, setActive] = useState(0);
 
-              <h3 className="client--name">
-                {" "}
-                Jane
-                <AiFillInstagram
-                  style={{ color: " #E1306C" }}
-                ></AiFillInstagram>
-              </h3>
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="testimonials-section">
+      <span className="section-label">Client Feedback</span>
+      <h2 className="section-title">Testimonials</h2>
+
+      <div className="testimonials-track">
+        {testimonials.map((t, i) => (
+          <div
+            key={i}
+            className={`tcard${i === active ? " tcard--active" : ""}`}
+          >
+            <FaQuoteLeft className="tcard__quote-icon" />
+            <div className="tcard__stars">
+              {[...Array(5)].map((_, j) => (
+                <FaStar key={j} />
+              ))}
             </div>
-          </a>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+            <p className="tcard__text">{t.quote}</p>
+            <a
+              href={t.link}
+              className="tcard__author"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.name} <AiFillInstagram />
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <div className="testimonials-dots">
+        {testimonials.map((_, i) => (
+          <button
+            key={i}
+            className={`tdot${i === active ? " tdot--active" : ""}`}
+            onClick={() => setActive(i)}
+            aria-label={`Testimonial ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 

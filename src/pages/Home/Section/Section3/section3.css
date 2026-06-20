@@ -1,9 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-.sec3 {
-  background-color: #000;
-  padding-top: 50px;
-  padding-left: 5em;
-  padding-right: 5em;
-  justify-content: center;
-  font-family: "open sans", sans-serif;
+.skills-preview {
+  background: var(--bg);
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.skills-preview__link {
+  text-decoration: none;
+}
+
+.skills-preview__link:hover .section-label {
+  opacity: 0.75;
+}
+
+.skills-preview .section-title {
+  margin-bottom: 3rem;
+}
+
+.skills-preview__bars {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  text-align: left;
+}
+
+.skill-bar__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.skill-bar__pct {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.skill-bar__track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.skill-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #5be89e);
+  border-radius: 100px;
+  transition: width 1s ease;
+}
+
+#light .skills-preview {
+  background: #f4f7ff;
+}
+
+#light .skill-bar__track {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+#light .skill-bar__name {
+  color: #1a1a2e;
 }

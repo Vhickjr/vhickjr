@@ -5,7 +5,7 @@ import {
   FaTwitterSquare,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaArrowAltCircleUp,
+  FaArrowUp,
   FaGithubSquare,
 } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
@@ -13,89 +13,69 @@ import "./section7.css";
 
 const Section7 = () => {
   const goToTop = () => {
-    document.body.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="contact-me">
-      <h2 className="title">contact me</h2>
-      <div className="wrapper">
-        <ul className="contact-list">
-          <li className="contact-list-item">
-            <BsWhatsapp className="icon" />
-            <a
-              href="https://wa.me/message/J4QIEDLFNOBAK1"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              <p className="contact-details">+234 813 962 4288</p>
-            </a>
-          </li>
-          <li className="contact-list-item">
-            <FaEnvelope className="icon" />
-            <a
-              style={{ textDecoration: "none", color: "white" }}
-              href="mailto:victormathias001@gmail.com"
-            >
-              {" "}
-              <p className="contact-details">victormathias001@gmail.com</p>
-            </a>
-          </li>
-          <li className="contact-list-item">
-            <FaMapMarkerAlt className="icon" />
-            <p className="contact-details">Lagos, NIGERIA</p>
-          </li>
+    <div className="contact-section">
+      <div className="contact-section__inner">
+        <div className="contact-section__info">
+          <span className="section-label">Get In Touch</span>
+          <h2 className="section-title">Contact Me</h2>
 
-          <div className="icons">
-            <a
-              href="https://www.linkedin.com/in/victor-mathias-585b71205"
-              style={{ color: "#0077B5" }}
-            >
-              <FaLinkedin className="icon" />
+          <ul className="contact-list">
+            <li>
+              <BsWhatsapp className="contact-list__icon" />
+              <a href="https://wa.me/message/J4QIEDLFNOBAK1">
+                +234 813 962 4288
+              </a>
+            </li>
+            <li>
+              <FaEnvelope className="contact-list__icon" />
+              <a href="mailto:victormathias001@gmail.com">
+                victormathias001@gmail.com
+              </a>
+            </li>
+            <li>
+              <FaMapMarkerAlt className="contact-list__icon" />
+              <span>Lagos, Nigeria</span>
+            </li>
+          </ul>
+
+          <div className="contact-socials">
+            <a href="https://www.linkedin.com/in/victor-mathias-585b71205" aria-label="LinkedIn">
+              <FaLinkedin />
             </a>
-            <a
-              href="https://www.instagram.com/vhickjr/"
-              style={{ color: "#E1306C" }}
-            >
-              <FaInstagram className="icon" />
+            <a href="https://www.instagram.com/vhickjr/" aria-label="Instagram">
+              <FaInstagram />
             </a>
-            <a
-              href="https://www.twitter.com/__therealvictor"
-              style={{ color: "#1DA1F2" }}
-            >
-              <FaTwitterSquare className="icon" />
+            <a href="https://www.twitter.com/__therealvictor" aria-label="Twitter">
+              <FaTwitterSquare />
             </a>
-            <a href="https://github.com/Vhickjr" style={{ color: "#6e5494" }}>
-              <FaGithubSquare className="icon" />
+            <a href="https://github.com/Vhickjr" aria-label="GitHub">
+              <FaGithubSquare />
             </a>
           </div>
-        </ul>
-        <div className="contact-form">
-          <form>
-            <div className="contact-input">
-              <input type="text" placeholder="Name" />
-            </div>
-            <div className="contact-input">
-              <input type="text" placeholder="Phone Number" />
-            </div>
-            <div className="contact-input">
-              <input type="email" placeholder="Email" />
-            </div>
-            <div className="contact-textarea">
-              <textarea placeholder="Message"></textarea>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-          <a href="#Top">
-            {" "}
-            <FaArrowAltCircleUp id="goto" onClick={goToTop} />
-          </a>
         </div>
+
+        <form className="contact-form">
+          <div className="contact-form__row">
+            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <input type="email" placeholder="Email Address" />
+          <textarea placeholder="Your Message" rows={5} />
+          <button type="submit" className="btn btn--primary">
+            Send Message
+          </button>
+        </form>
       </div>
+
+      <button className="scroll-top" onClick={goToTop} aria-label="Scroll to top">
+        <FaArrowUp />
+      </button>
     </div>
   );
 };
 
 export default Section7;
-
-/*Create a  function called totop that scrolls to the top of a page*/

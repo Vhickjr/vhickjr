@@ -3,36 +3,32 @@ import "./aboutme.css";
 import Banner from "../../components/banner/Banner";
 import Myportrait from "./vhickjr2.png";
 import {
-  //FaArrowCircleLeft,
-  FaArrowCircleRight,
+  FaArrowRight,
   FaSchool,
   FaChartLine,
   FaBusinessTime,
   FaDesktop,
 } from "react-icons/fa";
 
+const processSteps = ["Empathize", "Define", "Ideate", "Prototype", "Test"];
+
+const facts = [
+  { icon: <FaDesktop />, label: "10 featured projects" },
+  { icon: <FaSchool />, label: "EEE Student at Unilag" },
+  { icon: <FaChartLine />, label: "Forex trader" },
+  { icon: <FaBusinessTime />, label: "Entrepreneur" },
+];
+
 export default function Aboutme() {
   return (
-    <div className="aboutme">
-      <div>
-        {" "}
-        <Banner></Banner>
-      </div>
-      <div className="main">
-        <div style={{ width: "60%" }}>
-          <h2
-            style={{
-              fontWeight: "800",
-              fontSize: "32px",
-              lineHeight: "64px",
-              fontFamily: "Nunito",
-              fontStyle: "normal",
-              paddingTop: "50px",
-            }}
-          >
-            About me
-          </h2>
-          <p style={{}}>
+    <div className="about-page">
+      <Banner />
+
+      <div className="about-page__hero">
+        <div className="about-page__hero-text">
+          <span className="section-label">About Me</span>
+          <h1 className="section-title">Victor Mathias</h1>
+          <p className="about-page__bio">
             I am a software developer with 2 years of experience, specializing
             in front-end development. My skillset includes full-stack and
             back-end development, and I am proficient in several languages
@@ -40,196 +36,39 @@ export default function Aboutme() {
             to creating visually stunning front-end interfaces.
           </p>
         </div>
-        <div>
-          <img
-            src={Myportrait}
-            alt="My portrait"
-            style={{
-              height: "425px",
-              width: "100%",
-              borderRadius: "100%",
-              padding: "2em",
-            }}
-          ></img>
+        <div className="about-page__hero-img">
+          <img src={Myportrait} alt="Victor Mathias" />
         </div>
       </div>
-      <div className="item1">
-        <h2
-          style={{
-            fontWeight: "800",
-            fontSize: "32px",
-            lineHeight: "64px",
-            fontFamily: "Nunito",
-            fontStyle: "normal",
-          }}
-        >
-          My design process
-        </h2>
-        <div
-          style={{
-            flexWrap: "wrap",
-            display: "inline-flex",
-            justifyContent: "center",
-            gap: "2em",
-            padding: "2em",
-          }}
-        >
-          {" "}
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "white",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <div style={{ marginTop: "50px" }}>Empathize</div>
-          </div>
-          <FaArrowCircleRight id="arrow1" />
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "white",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <div style={{ marginTop: "50px" }}>Define</div>
-          </div>
-          <FaArrowCircleRight id="arrow1" />
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "white",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <div style={{ marginTop: "50px" }}>Ideate</div>
-          </div>
-          <FaArrowCircleRight id="arrow1" />
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "white",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <div style={{ marginTop: "50px" }}>Prototype</div>
-          </div>
-          <FaArrowCircleRight id="arrow1" />
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "white",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <div style={{ marginTop: "50px" }}>Test</div>
-          </div>
+
+      <div className="about-page__process">
+        <span className="section-label">How I Work</span>
+        <h2 className="section-title">My Design Process</h2>
+        <div className="process-steps">
+          {processSteps.map((step, i) => (
+            <React.Fragment key={step}>
+              <div className="process-step">
+                <div className="process-step__num">{i + 1}</div>
+                <span className="process-step__label">{step}</span>
+              </div>
+              {i < processSteps.length - 1 && (
+                <FaArrowRight className="process-arrow" />
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
-      <div className="item2">
-        {" "}
-        <h2
-          style={{
-            fontWeight: "800",
-            fontSize: "32px",
-            lineHeight: "64px",
-            fontFamily: "Nunito",
-            fontStyle: "normal",
-            color: "white",
-            backgroundColor: "black",
-          }}
-        >
-          Fun fact about me
-        </h2>
-        <div
-          style={{
-            flexWrap: "wrap",
-            display: "inline-flex",
-            justifyContent: "space-between",
-            gap: "2em",
-            padding: "2em",
-          }}
-        >
-          {" "}
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "#f4f4f4",
-              color: "black",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <FaDesktop
-              style={{ marginTop: "15px", fontSize: "25px" }}
-            ></FaDesktop>
-            <div style={{ marginTop: "20px" }}>10 featured projects</div>
-          </div>
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "#f4f4f4",
-              color: "black",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <FaSchool
-              style={{ marginTop: "15px", fontSize: "25px" }}
-            ></FaSchool>
-            <div style={{ marginTop: "20px" }}>EEE Student at Unilag</div>
-          </div>
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "#f4f4f4",
-              color: "black",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <FaChartLine
-              style={{ marginTop: "15px", fontSize: "25px" }}
-            ></FaChartLine>
-            <div style={{ marginTop: "20px" }}>Forex trader</div>
-          </div>
-          <div
-            style={{
-              width: "120px",
-              height: "120px",
-              border: "2px solid #f4f4f4",
-              borderRadius: "15px",
-              backgroundColor: "#f4f4f4",
-              color: "black",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            }}
-          >
-            <FaBusinessTime
-              style={{ marginTop: "15px", fontSize: "25px" }}
-            ></FaBusinessTime>
-            <div style={{ marginTop: "20px" }}>Entrepreneur</div>
-          </div>
+
+      <div className="about-page__facts">
+        <span className="section-label">Fun Facts</span>
+        <h2 className="section-title">About Me</h2>
+        <div className="facts-grid">
+          {facts.map((f) => (
+            <div key={f.label} className="fact-card">
+              <div className="fact-card__icon">{f.icon}</div>
+              <span className="fact-card__label">{f.label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
