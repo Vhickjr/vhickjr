@@ -4,155 +4,86 @@ import { VscDebugAll } from "react-icons/vsc";
 import { FcEngineering } from "react-icons/fc";
 import { GrDeploy } from "react-icons/gr";
 import { GoVerified } from "react-icons/go";
-import styled from "styled-components";
 import Testimonials from "./Testimonials";
 import Banner from "../../components/banner/Banner";
-const Container = styled.main`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-`;
 
-const Services = () => {
+const services = [
+  {
+    icon: <VscDebugAll />,
+    title: "Debugging",
+    text: "The task of debugging involves identifying and eliminating errors, both present and potential, in the software code that may cause it to malfunction or crash.",
+  },
+  {
+    icon: <FcEngineering />,
+    title: "API Development",
+    text: "An API (Application Programming Interface) is a set of guidelines that allows a program to access and utilize the functionalities of another application.",
+  },
+  {
+    icon: <GrDeploy />,
+    title: "Deployment",
+    text: "Deploying projects, websites, and applications on live servers using various tools such as AWS, Heroku, Netlify, Vercel, or Google Play Console.",
+  },
+];
+
+const frontendStack = ["HTML", "CSS", "JavaScript", "ReactJS", "NextJS", "SASS"];
+const backendStack = ["NodeJS (Express)", "Python (Django)", "MongoDB", "MySQL", "Vercel", "SASS"];
+
+export default function Services() {
   return (
-    <div className="services">
-      <div>
-        {" "}
-        <Banner></Banner>
-      </div>
-      <h1 style={{ marginTop: "100px", color: "#046d33" }}>My Services</h1>
-      <div className="services-content-wrapper ">
-        <div className="myservices">
-          <VscDebugAll id="myservices"></VscDebugAll>
-          <h1 style={{ color: "white", padding: "10px" }}>Debugging</h1>
-          <p style={{ color: "white", padding: "10px" }}>
-            The task of debugging involves identifying and eliminating errors,
-            both present and potential, in the software code that may cause it
-            to malfunction or crash.
-          </p>
+    <div className="services-page">
+      <Banner />
+
+      <div className="services-page__inner">
+        <div className="services-page__header">
+          <span className="section-label">What I Offer</span>
+          <h1 className="section-title">My Services</h1>
         </div>
-        <div className="myservices">
-          <FcEngineering id="myservices"></FcEngineering>
-          <h1 style={{ color: "white", padding: "10px" }}>API development</h1>
-          <p style={{ color: "white", padding: "10px" }}>
-            An API, or Application Programming Interface, is a set of
-            guidelines, protocols, or specifications that allows a program or
-            application to access and utilize the functionalities and resources
-            of another program or application
-          </p>
+
+        <div className="svc-cards">
+          {services.map((s) => (
+            <div key={s.title} className="svc-card">
+              <div className="svc-card__icon">{s.icon}</div>
+              <h3 className="svc-card__title">{s.title}</h3>
+              <p className="svc-card__text">{s.text}</p>
+            </div>
+          ))}
         </div>
-        <div className="myservices">
-          <GrDeploy id="myservices"></GrDeploy>
-          <h1 style={{ color: "white", padding: "10px" }}>Deployment</h1>
-          <p style={{ color: "white", padding: "10px" }}>
-            Deploying projects, websites, and applications on live servers using
-            various tools such as AWS, Heroku, Netlify, Vercel, or Google Play
-            Console.
-          </p>
-        </div>
-      </div>
-      <h1>My Tech Stack</h1>
-      <div className="techstack">
-        <div className="frontend">
-          <h4 id="frontend1">Frontend Development</h4>
-          <div id="frontend2">
-            <h5>
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}HTML
-            </h5>
-          </div>
-          <div id="frontend2">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}CSS
-            </h5>
-          </div>
-          <div id="frontend3">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              javaScript
-            </h5>
-          </div>
-          <div id="frontend3">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              ReactJS
-            </h5>
-          </div>
-          <div id="frontend4">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              NextJS
-            </h5>
-          </div>
-          <div id="frontend4">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}SASS
-            </h5>
+
+        <div className="tech-section">
+          <span className="section-label">Technology</span>
+          <h2 className="section-title">My Tech Stack</h2>
+          <div className="tech-grids">
+            <div className="tech-grid">
+              <h4 className="tech-grid__title">Frontend Development</h4>
+              <ul className="tech-list">
+                {frontendStack.map((t) => (
+                  <li key={t}>
+                    <GoVerified className="tech-list__icon" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="tech-grid">
+              <h4 className="tech-grid__title">Backend Development</h4>
+              <ul className="tech-list">
+                {backendStack.map((t) => (
+                  <li key={t}>
+                    <GoVerified className="tech-list__icon" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div className="frontend">
-          <h4 id="frontend1">Backend Development</h4>
-          <div id="frontend2">
-            <h5>
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              NodeJS (Express)
-            </h5>
-          </div>
-          <div id="frontend2">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified>
-              {/* for spacing*/}
-              python(Django)
-            </h5>
-          </div>
-          <div id="frontend3">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              MongoDB
-            </h5>
-          </div>
-          <div id="frontend3">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              MySQL
-            </h5>
-          </div>
-          <div id="frontend4">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}
-              Vercel
-            </h5>
-          </div>
-          <div id="frontend4">
-            <h5>
-              {" "}
-              <GoVerified></GoVerified> &nbsp;&nbsp;&nbsp;{/* for spacing*/}SASS
-            </h5>
-          </div>
-        </div>
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className="mytestimonials">
-        {" "}
-        <Container>
+        <div className="services-page__testimonials">
+          <span className="section-label">Client Feedback</span>
+          <h2 className="section-title">Testimonials</h2>
           <Testimonials />
-        </Container>
+        </div>
       </div>
     </div>
   );
-};
-export default Services;
-/*Services and Testimonial, I merged them cause I don't want too many pages
-      on my portfolio website. I want the site to be specific. Adding my
-      services, frontend, backend tech stack,testimonials, */
+}

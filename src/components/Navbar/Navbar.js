@@ -1,54 +1,48 @@
-import React from "react";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.css";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbarr() {
-  const handleClick = () => {
-    window.location.href = "mailto:victormathias001@gmail.com";
-  };
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const close = () => setIsOpen(false);
+
   return (
-    <Navbar
-      collapseOnSelect
-      bg="dark"
-      variant="dark"
-      expand="lg"
-      style={{
-        paddingLeft: "30px",
-        paddingRight: "20px",
-      }}
-    >
-      <Container fluid>
-        <Navbar.Brand href="#home"> VM</Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          className="navbar-toggler-icon"
-        />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            {/*<Nav.Link href="/">Home</Nav.Link>*/}
-            <Nav.Link href="./Aboutme">About Me</Nav.Link>
-            <Nav.Link href="./Skills">Skills</Nav.Link>
-            <Nav.Link href="./Services">Services</Nav.Link>
-            <Nav.Link href="./Myportfolio">My Portfolio</Nav.Link>
-            {/*  <Nav.Link href="./Testimonial">Testimonial</Nav.Link>*/}
-            <Nav.Link href="./Contactme">Contact Me</Nav.Link>
-          </Nav>
-          <Nav>
-            <Form className="d-flex">
-              <Button variant="outline-light">
-                <span onClick={handleClick}>Hire me</span>
-              </Button>
-            </Form>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className={`site-nav${scrolled ? " site-nav--scrolled" : ""}`}>
+      <a href="/" className="site-nav__brand">VM</a>
+
+      <ul className={`site-nav__links${isOpen ? " site-nav__links--open" : ""}`}>
+        <li><a href="/Aboutme" onClick={close}>About Me</a></li>
+        <li><a href="/Skills" onClick={close}>Skills</a></li>
+        <li><a href="/Services" onClick={close}>Services</a></li>
+        <li><a href="/Myportfolio" onClick={close}>Portfolio</a></li>
+        <li><a href="/Contactme" onClick={close}>Contact</a></li>
+        <li>
+          <a
+            href="mailto:victormathias001@gmail.com"
+            className="site-nav__hire"
+            onClick={close}
+          >
+            Hire Me
+          </a>
+        </li>
+      </ul>
+
+      <button
+        className="site-nav__toggle"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+    </nav>
   );
 }
 

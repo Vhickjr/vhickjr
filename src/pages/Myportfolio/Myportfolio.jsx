@@ -1,256 +1,67 @@
 import React, { useState } from "react";
 import "./myportfolio.css";
-//import Screenshot from "./Screenshot.png";
 import Banner from "../../components/banner/Banner";
 import Data from "./data";
-import Card from "./card";
-import Buttons from "./Buttons";
+
+const categories = ["all", "latest", "cms", "scripting"];
 
 export default function Myportfolio() {
-  const [item, setItem] = useState(Data);
+  const [active, setActive] = useState("all");
 
-  const menuItems = [...new Set(Data.map((Val) => Val.category))];
+  const filtered = active === "all" ? Data : Data.filter((d) => d.category === active);
 
-  const filterItem = (curcat) => {
-    const newItem = Data.filter((newVal) => {
-      return newVal.category === curcat;
-    });
-    setItem(newItem);
-  };
   return (
-    <div>
-      <div>
-        {" "}
-        <Banner></Banner>
-      </div>
-      <div style={{ marginTop: "100px" }}>
-        <Buttons
-          filterItem={filterItem}
-          setItem={setItem}
-          menuItems={menuItems}
-        ></Buttons>
-        <h1>
-          {" "}
-          <span style={{ color: "green", marginTop: "100px" }}>My</span>{" "}
-          Portfolio
-        </h1>
-        <br></br>
-        <h4>
-          Some of the{" "}
-          <span style={{ color: "green" }}> Projects I have worked</span> on.
-        </h4>
-        <Card item={item} /> {/*UI Component*/}
-      </div>
-      {/*<div>
-        {" "}
-        <Banner></Banner>
-      </div>
-      <div style={{ marginTop: "100px" }}>
-        <h1>
-          {" "}
-          <span style={{ color: "green", marginTop: "100px" }}>My</span>{" "}
-          Portfolio
-        </h1>
-        <br></br>
-        <h4>
-          Some of the{" "}
-          <span style={{ color: "green" }}> Projects I have worked</span> on.
-        </h4>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
+    <div className="portfolio-page">
+      <Banner />
+
+      <div className="portfolio-page__inner">
+        <div className="portfolio-page__header">
+          <span className="section-label">My Work</span>
+          <h1 className="section-title">
+            My <span className="text-accent">Portfolio</span>
+          </h1>
+          <p className="section-subtitle">
+            Some of the projects I have worked on.
           </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
+        </div>
+
+        <div className="portfolio-filters">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              className={`filter-btn${active === cat ? " filter-btn--active" : ""}`}
+              onClick={() => setActive(cat)}
+            >
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </button>
+          ))}
+        </div>
+
+        <div className="portfolio-grid">
+          {filtered.map((item) => (
+            <div key={item.id} className="port-card">
+              <div className="port-card__img-wrap">
+                <img src={item.img} alt={item.title} />
+                <div className="port-card__overlay">
+                  {item.link && (
+                    <button
+                      className="btn btn--primary port-card__cta"
+                      onClick={() => window.open(item.link, "_blank")}
+                    >
+                      View Project
+                    </button>
+                  )}
+                </div>
+              </div>
+              <div className="port-card__body">
+                <span className="port-card__cat">{item.category}</span>
+                <h3 className="port-card__title">{item.title}</h3>
+                <p className="port-card__desc">{item.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "black", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-      </div>
-      <div className="port1">
-        <div className="port2">
-          <img
-            src={Screenshot}
-            alt="My portrait"
-            className="img-container img-container1 img-container2 "
-          ></img>
-        </div>
-        <div className="port3">
-          {" "}
-          <h1 style={{ color: "green", paddingTop: "40px" }}>Victor Mathias</h1>
-          <p style={{ color: "white", paddingTop: "20px" }}>
-            This is my portfolio website, built with ReactJS.
-          </p>
-          <button style={{ borderRadius: "20px", background: "transparent" }}>
-            <a>View project</a>
-          </button>
-        </div>
-          </div>*/}
     </div>
   );
 }
-
-/*Myportfolio: 1. Restaurant Website 2. Admin Dashboard 3. Bater clone 4.
-      To-do App 5. Bub-it 6. Quiz-app 7. internet tools app (Practicing raw
-      programming skills) 8. styleteebera website 9. Frontend libraries project
-      10. JavaScript dataStructure and Algorithms project. 11. Your Porfolio
-      website */

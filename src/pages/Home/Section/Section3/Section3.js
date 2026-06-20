@@ -1,76 +1,37 @@
 import React from "react";
 import "./section3.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+const skills = [
+  { name: "HTML", level: 95 },
+  { name: "CSS", level: 80 },
+  { name: "JavaScript / Node.js", level: 70 },
+  { name: "React JS / Next JS", level: 70 },
+];
+
 function Section3() {
   return (
-    <div className="sec3">
-      <a href="./skills">
-        <h3 style={{ color: "white", textAlign: "center" }}>skills</h3>
+    <div className="skills-preview">
+      <a href="/Skills" className="skills-preview__link">
+        <span className="section-label">My Skills</span>
       </a>
-      <h3 style={{ color: "white", textAlign: "start" }}>HTML</h3>
-      <div class="progress">
-        <div
-          class="progress-bar bg-success"
-          role="progressbar"
-          style={{ width: "95%" }}
-          aria-valuenow="95"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          {" "}
-          95%
-        </div>
-      </div>
-      <br></br>
+      <h2 className="section-title">What I Know</h2>
 
-      <h3 style={{ color: "white", textAlign: "start" }}>CSS</h3>
-      <div class="progress">
-        <div
-          class="progress-bar bg-success"
-          role="progressbar"
-          style={{ width: "80%" }}
-          aria-valuenow="80"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          {" "}
-          80%
-        </div>
+      <div className="skills-preview__bars">
+        {skills.map((s) => (
+          <div key={s.name} className="skill-bar">
+            <div className="skill-bar__meta">
+              <span className="skill-bar__name">{s.name}</span>
+              <span className="skill-bar__pct">{s.level}%</span>
+            </div>
+            <div className="skill-bar__track">
+              <div
+                className="skill-bar__fill"
+                style={{ width: `${s.level}%` }}
+              />
+            </div>
+          </div>
+        ))}
       </div>
-      <br></br>
-
-      <h3 style={{ color: "white", textAlign: "start" }}>Javascript/Node</h3>
-      <div class="progress">
-        <div
-          class="progress-bar bg-success"
-          role="progressbar"
-          style={{ width: "70%" }}
-          aria-valuenow="70"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          70%
-        </div>
-      </div>
-      <br></br>
-
-      <h3 style={{ color: "white", textAlign: "start" }}>ReactJS/NextJS</h3>
-      <div class="progress">
-        <div
-          class="progress-bar bg-success"
-          role="progressbar"
-          style={{ width: "70%" }}
-          aria-valuenow="70"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          70%
-        </div>
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     </div>
   );
 }
